@@ -1,0 +1,10 @@
+Version 13 30
+{
+	Image xj_vdlcex1_bathroom_01_normal.dds
+	Type Regular
+	PixelFormat DXT1
+	Levels 9
+	Usage NORMAL
+	UsageFlags -
+	ExtraFlags 0
+}

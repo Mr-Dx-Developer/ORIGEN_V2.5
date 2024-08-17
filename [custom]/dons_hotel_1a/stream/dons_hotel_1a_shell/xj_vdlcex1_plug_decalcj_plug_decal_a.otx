@@ -1,0 +1,10 @@
+Version 13 30
+{
+	Image xj_vdlcex1_plug_decalcj_plug_decal_a.dds
+	Type Regular
+	PixelFormat DXT5
+	Levels 7
+	Usage DIFFUSE
+	UsageFlags -
+	ExtraFlags 0
+}

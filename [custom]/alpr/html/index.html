@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>San Andreas - ALPR System</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" type="text/css" rel="stylesheet">
+	<link href="css/app.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+	<div id="alpr-display">
+		<div id="alpr-ui-movement" class="center-align" style="display:none">
+			<div id="alpr-ui-movement-display">
+				<div class="row s12" id="alpr-ui-controllers">
+					<div class="col s12">
+						<button class="waves-effect waves-light btn btn-block grey lighten-1 black-text" id="alpr-exit-ui-editor">EXIT ALPR UI EDITOR</button>
+					</div>
+					<div class="col s12">
+						<button class="waves-effect waves-light btn btn-block red lighten-1" id="alpr-ui-reset">RESET UI POSITIONS</button>
+					</div>
+				</div>
+				<div class="row s12" id="alpr-ui-alert-size">
+					<div class="col s3">
+						<button class="waves-effect waves-light btn btn-block blue-grey darken-2" id="alpr-ui-alert-decrease">-</button>
+					</div>
+					<div class="col s6">
+						<span class="btn grey darken-2">ALERT SIZE</span>
+					</div>
+					<div class="col s3">
+						<button class="waves-effect waves-light btn btn-block blue-grey darken-2" id="alpr-ui-alert-increase">+</button>
+					</div>
+				</div>
+				<div class="row s12" id="alpr-ui-reader-size">
+					<div class="col s3">
+						<button class="waves-effect waves-light btn btn-block blue-grey darken-2" id="alpr-ui-reader-decrease">-</button>
+					</div>
+					<div class="col s6">
+						<span class="btn grey darken-2">READER SIZE</span>
+					</div>
+					<div class="col s3">
+						<button class="waves-effect waves-light btn btn-block blue-grey darken-2" id="alpr-ui-reader-increase">+</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="alpr-alert-frame" class="alert-both" style="display:none">
+			<div id="alpr-alert-display">
+				<div class="readers">
+					<div id="front-reader">
+						<p id="front-reader-header">FRONT ALERT</p>
+						<p id="front-reader-text" class="reader-match"></p>
+						<p id="front-reader-reason" class="alert-red"></p>
+					</div>
+
+					<div id="rear-reader">
+						<p id="rear-reader-header">REAR ALERT</p>
+						<p id="rear-reader-text" class="reader-match"></p>
+						<p id="rear-reader-reason" class="alert-red"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="alpr-plate-reader-frame" style="display:none">
+			<div id="alpr-plate-reader">
+				<div class="labels">
+					<p class="title">FRONT</p>
+					<p class="title">REAR</p>
+				</div>
+
+				<div class="plates">
+					<div id="front-plate" class="plate-container">
+						<img id="front-plate-img" class="plate">
+
+						<div id="front-plate-text" class="text-container">
+							<p id="front-plate-text-fill" class="plate-blue"></p>
+							<p class="hilite"></p>
+							<p id="front-plate-text-lolite" class="lolite"></p>
+							<p class="shadow"></p>
+						</div>
+					</div>
+
+					<div id="rear-plate" class="plate-container">
+						<img id="rear-plate-img" class="plate">
+
+						<div id="rear-plate-text" class="text-container">
+							<p id="rear-plate-text-fill" class="plate-yellow"></p>
+							<p class="hilite"></p>
+							<p id="rear-plate-text-lolite" class="lolite"></p>
+							<p class="shadow"></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="labels">
+					<p id="front-plate-locked" class="alpr-lock-p">LOCKED</p>
+					<p id="rear-plate-locked" class="alpr-lock-p">LOCKED</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container valign-wrapper" id="alpr-controller" style="display:none">
+		<div class="section">
+			<div class="row">
+				<div class="col s10 offset-s1" id="alpr-controller-row">
+					<div class="row s12 grey darken-4" id="alpr-controller-internal-row">
+						<div class="col s12" id="alpr-title">
+							<h5 class="white-text center-align"><b>San Andreas - AUTOMATIC LICENSE PLATE RECOGNITION SYSTEM</b></h5><hr/>
+						</div>
+						<div class="col s12" id="alpr-output">
+							<div class="col s3">
+								<div class="grey darken-2" id="alpr-history">
+								</div>
+							</div>
+							<div class="col s9">
+								<div class="grey darken-2" id="alpr-info">
+									<div class="col s12 grey-text text-lighten-2" id="alpr-info-text">
+									</div>
+									<div class="col s12 grey-text text-lighten-2" id="alpr-info-button-div">
+										<button class="waves-effect waves-light btn btn-block blue-grey darken-2" id="alpr-ui-clear-alert" style="display:none">REMOVE UI LOCK</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col s12" id="alpr-markers" style="display:none">
+							<div class="col s4">
+								<div class="grey darken-2" id="alpr-active-markers">
+									<div class="col s12"><button class="waves-effect waves-light btn btn-block green darken-2" id="alpr-create-marker" onclick="clearMarker()">CREATE MARKER</button></div>
+								</div>
+							</div>
+							<div class="col s8">
+								<div class="grey darken-2" id="alpr-manage-markers">
+									<div class="col s12 grey-text text-lighten-2">
+										<h5 class="white-text center-align"><b>CREATE MARKER</b></h5>
+										<form class="col s12" id="alpr-markers-form">
+											<div class="row">
+												<div class="input-field col s6">
+													<input type="text" autocomplete="off" maxlength="25" id="markerFirst">
+													<label for="markerFirst">First Name</label>
+												</div>
+												<div class="input-field col s6">
+													<input type="text" autocomplete="off" maxlength="25" id="markerLast">
+													<label for="markerLast">Last Name</label>
+												</div>
+											</div>
+											<div class="row">
+												<div class="input-field col s12">
+													<input autocomplete="off" type="text" data-length="8" maxlength="8" id="markerPlate">
+													<label for="markerPlate">License Plate</label>
+												</div>
+											</div>
+											<div class="row">
+												<div class="input-field col s12">
+													<input autocomplete="off" type="text" maxlength="30" required id="markerReason">
+													<label for="markerReason">Reason</label>
+												</div>
+											</div>
+											<div class="col s6" id="alpr-marker-delete" style="display:none">
+												<button class="waves-effect waves-light btn btn-block red darken-2" type="submit" id="alpr-marker-delete-button">DELETE</button>
+											</div>
+											<div class="col s12" id="alpr-marker-submit">
+												<button class="waves-effect waves-light btn btn-block green darken-2" type="submit" id="alpr-marker-submit-button">SUBMIT</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col s12" id="alpr-settings" style="display:none">
+							<div class="col s12">
+								<div class="grey darken-2" id="alpr-manage-markers">
+									<div class="col s12 grey-text text-lighten-2">
+										<h5 class="white-text center-align"><b>MANAGE SETTINGS</b></h5>
+										<form class="col s12" id="alpr-settings-form">
+											<div class="row center-align white-text" id="alpr-settings-volume">
+												<div class="input-field col s6">
+													<p class="range-field">
+														Shutter Volume
+														<input type="range" id="shutter_vol" min="0" max="100" />
+													</p>
+												</div>
+												<div class="input-field col s6">
+													<p class="range-field">
+														Alert Background Volume
+														<input type="range" id="cchord_vol" min="0" max="100" />
+													</p>
+												</div>
+												<div class="input-field col s6">
+													<p class="range-field">
+														Local TTS Volume
+														<input type="range" id="local_vol" min="0" max="100" />
+													</p>
+												</div>
+												<div class="input-field col s6">
+													<p class="range-field">
+														NCIC TTS Volume
+														<input type="range" id="ncic_vol" min="0" max="100" />
+													</p>
+												</div>
+											</div>
+											<div class="col s6">
+												<button class="waves-effect waves-light btn btn-block red lighten-1" id="alpr-edit-ui-button">EDIT UI ELEMENT POSITIONS</button>
+											</div>
+											<div class="col s6">
+												<button class="waves-effect waves-light btn btn-block green darken-1" id="alpr-edit-settings-button">SUBMIT</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col s12" id="alpr-buttons">
+							<div class="col s3">
+								<button class="waves-effect waves-light btn btn-block grey lighten-3 black-text" id="alpr-exit-button"><i class="material-icons left">exit_to_app</i>Exit</button>
+							</div>
+							<div class="col s3">
+								<button class="waves-effect waves-light btn btn-block indigo accent-2" id="alpr-settings-button">Settings</button>
+							</div>
+							<div class="col s4">
+								<button class="waves-effect waves-light btn btn-block blue accent-3" id="alpr-markers-button">Manage ALPR Markers</button>
+							</div>
+							<div class="col s2 center-align" id="alpr-enable-toggle-div">
+								<div class="switch btn btn-block red accent-2" id="alpr-enable-switch">
+									<label class="white-text" id="alpr-enable-label">
+										<span>OFF</span>
+										<input type="checkbox" id="alpr-enable-checkbox">
+										<span class="lever"></span>
+										<span>ON</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+</html>

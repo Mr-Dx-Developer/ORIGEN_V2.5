@@ -1,0 +1,175 @@
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2/dist/spectrum.min.js"></script>
+	<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+	<div id="main">
+		<div class="maintext">Neon Menu</div>
+		<div class="close" id="button-closed"><img src="images/close.png"></img></div>
+		<div class="buttons">
+			<div class="slot" id="button-anims"><img src="images/neons.png"></img></div>
+			<div class="slot" id="button-colors"><img src="images/colors.png"></img></div>
+			<div class="slot" id="button-settings"><img src="images/settings.png"></img></div>
+		</div>
+	</div>
+	<div id="colors">
+		<div class="maintext">Neon Colors</div>
+		<div class="close" id="cbutton-closed"><img src="images/close.png"></img></div>
+		<div class="back" id="cbutton-back"><img src="images/back.png"></img></div>
+		<div class="container">
+			<div class="rgb-button">
+				<div class="cardtext">RGB Anim</div>
+				<label class="switch">
+					<input type="checkbox" id="s-rgbanim">
+					<span class="slider" id="srgbanim"></span>
+				</label>
+			</div>
+		</div>
+		<div class="colorchanger" id="colorchange">
+			<input class="pickercolor" id="color-picker" value="#ff66ff"/>
+		</div>	
+	</div>	
+	<div id="anims">
+		<div class="maintext">Neon Animations</div>
+		<div class="close" id="nbutton-closed"><img src="images/close.png"></img></div>
+		<div class="back" id="nbutton-back"><img src="images/back.png"></img></div>
+		<div class="container">
+		  	<div class="neon1">
+		  		<div class="cardtext">Left Neon</div>
+				<label class="switch">
+					<input type="checkbox" id="s-neon1">
+					<span class="slider" id="sneon-1"></span>
+				</label>
+			</div>
+			<div class="neon2">
+				<div class="cardtext">Right Neon</div>
+				<label class="switch">
+					<input type="checkbox" id="s-neon2">
+					<span class="slider" id="sneon-2"></span>
+				</label>
+			</div>
+		  	<div class="neon3">
+		  		<div class="cardtext">Front Neon</div>
+				<label class="switch">
+					<input type="checkbox" id="s-neon3">
+					<span class="slider" id="sneon-3"></span>
+				</label>
+			</div>
+		  	<div class="neon4">
+		  		<div class="cardtext">Rear Neon</div>
+				<label class="switch">
+					<input type="checkbox" id="s-neon4">
+					<span class="slider" id="sneon-4"></span>
+				</label>
+			</div>
+			<div class="allneons">
+		  		<div class="cardtext">All Neons</div>
+				<label class="switch">
+					<input type="checkbox" id="s-allneons">
+					<span class="slider" id="sneon-all"></span>
+				</label>
+			</div>
+			<div class="crisscross">
+		  		<div class="cardtext">Crisscross</div>
+				<label class="switch">
+					<input type="checkbox" id="s-crisscross">
+					<span class="slider" id="sneon-crisscross"></span>
+				</label>
+			</div>
+			<div class="lightning">
+		  		<div class="cardtext">Lightning</div>
+				<label class="switch">
+					<input type="checkbox" id="s-lightning"> 
+					<span class="slider" id="sneon-lightning"></span>
+				</label>
+			</div>
+			<div class="fourways">
+		  		<div class="cardtext">Fourways</div>
+				<label class="switch">
+					<input type="checkbox" id="s-fourways"> 
+					<span class="slider" id="sneon-fourways"></span>
+				</label>
+			</div>
+			<div class="blinking">
+		  		<div class="cardtext">Blinking</div>
+				<label class="switch">
+					<input type="checkbox" id="s-blinking"> 
+					<span class="slider" id="sneon-blinking"></span>
+				</label>
+			</div>
+			<div class="snake">
+		  		<div class="cardtext">Snake</div>
+				<label class="switch">
+					<input type="checkbox" id="s-snake"> 
+					<span class="slider" id="sneon-snake"></span>
+				</label>
+			</div>
+			<div class="allinone">
+		  		<div class="cardtext">All-In-One</div>
+				<label class="switch">
+					<input type="checkbox" id="s-allinone"> 
+					<span class="slider" id="sneon-allinone"></span>
+				</label>
+			</div>			
+		</div>
+	</div>	
+	<div id="settings">
+		<div class="maintext">Neon Settings</div>
+		<div class="close" id="sbutton-closed"><img src="images/close.png"></img></div>
+		<div class="back" id="sbutton-back"><img src="images/back.png"></img></div>
+		<div class="container">
+		  	<div class="aspeed1">
+		  		<div class="cardtext">Anims 1X</div>
+				<label class="switch">
+					<input type="checkbox" id="s-aspeed1">
+					<span class="slider" id="aspeed-1"></span>
+				</label>
+			</div>
+			<div class="aspeed2">
+		  		<div class="cardtext">Anims 2X</div>
+				<label class="switch">
+					<input type="checkbox" id="s-aspeed2">
+					<span class="slider" id="aspeed-2"></span>
+				</label>
+			</div>	
+			<div class="aspeed3">
+		  		<div class="cardtext">Anims 3X</div>
+				<label class="switch">
+					<input type="checkbox" id="s-aspeed3">
+					<span class="slider" id="aspeed-3"></span>
+				</label>
+			</div>
+			<div class="rgbspeed1">
+		  		<div class="cardtext">RGB 1X</div>
+				<label class="switch">
+					<input type="checkbox" id="s-rgbspeed1">
+					<span class="slider" id="rgbspeed-1"></span>
+				</label>
+			</div>
+			<div class="rgbspeed2">
+		  		<div class="cardtext">RGB 2X</div>
+				<label class="switch">
+					<input type="checkbox" id="s-rgbspeed2">
+					<span class="slider" id="rgbspeed-2"></span>
+				</label>
+			</div>	
+			<div class="rgbspeed3">
+		  		<div class="cardtext">RGB 3X</div>
+				<label class="switch">
+					<input type="checkbox" id="s-rgbspeed3">
+					<span class="slider" id="rgbspeed-3"></span>
+				</label>
+			</div>			
+		</div>
+	</div>
+
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="scripts.js" type="text/javascript"></script>
+	<script src="debounce.min.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2/dist/spectrum.min.js"></script>
+
+</body>

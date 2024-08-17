@@ -1,0 +1,411 @@
+@font-face {
+	font-family: "Plate-Font";
+	src: url( "../fonts/plate-font.ttf" );
+}
+
+@font-face {
+	font-family: "Plate-Font-Hilite";
+	src: url( "../fonts/plate-font-hilite.ttf" );
+}
+
+@font-face {
+	font-family: "Plate-Font-Lolite";
+	src: url( "../fonts/plate-font-lolite.ttf" );
+}
+
+@font-face {
+	font-family: "Plate-Font-Shadow";
+	src: url( "../fonts/plate-font-Shadow.ttf" );
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden
+}
+
+body {
+  background-position: center;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(48, 48, 48, .6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(48, 48, 48, .6);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn.waves-effect {
+  height: auto;
+  min-height: 20px;
+  line-height: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+div.container {
+  min-height: 100vh;
+}
+
+input {
+  color: white;
+}
+
+#alpr-controller-row {
+  border-radius: 5px;
+  background-image: url( "../images/pr_frame.png" );
+/*  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;*/
+  opacity: 0.9;
+  padding: 10px 21px;
+}
+
+#alpr-controller-internal-row {
+  border-radius: 5px;
+  background-image: url( "../images/pr_bg.png" );
+  opacity: 0.9;
+  border: solid 2px black;
+  margin-bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#alpr-enable-toggle-div {
+  font-weight: bold;
+}
+
+#alpr-enable-switch {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#alpr-title {
+  padding-bottom: 9px;
+}
+
+#alpr-history {
+  margin-right: -3px;
+}
+
+#alpr-history,
+#alpr-info,
+#alpr-active-markers,
+#alpr-manage-markers,
+#alpr-edit-marker {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 3px;
+  margin-left: -2px;
+  margin-right: -2px;
+  border-radius: 2px;
+  height: 450px;
+  overflow-y: auto;
+}
+
+#alpr-history div:not(:last-child),
+#alpr-active-markers div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+#alpr-buttons {
+  padding: 8px 0px;
+}
+
+#alpr-alert-frame {
+  width: 500px;
+  transition: transform 0.6s;
+  transform: scale( 0.6 );
+  transform-origin: 0 0;
+  left: calc( 99% - ( 500px * 0.6 ) );
+  border-radius: 15px;
+  padding: 16px;
+  opacity: 0.9;
+}
+
+#alpr-alert-display {
+  background-image: url( "../images/pr_bg.png" );
+  border-radius: 10px;
+  border: solid 2px black;
+}
+
+#alpr-alert-frame.alert-single {
+  position: absolute;
+  margin: auto;
+  margin-top: 96px;
+  background-image: url( "../images/pr_frame.png" );
+  top: calc( 64% - ( 160px * 0.6 ) );
+}
+
+#alpr-alert-frame.alert-single > #alpr-alert-display {
+  height: 160px;
+}
+
+#alpr-alert-frame.alert-both {
+  position: absolute;
+  margin: auto;
+  background-image: url( "../images/pr_frame.png" );
+  top: calc( 64% - ( 320px * 0.6 ) );
+}
+
+#alpr-alert-frame.alert-both > #alpr-alert-display {
+  height: 320px;
+}
+
+#alpr-plate-reader-frame {
+  width: 500px;
+  height: 200px;
+
+  position: absolute;
+  margin: auto;
+
+  background-image: url( "../images/pr_frame.png" );
+
+  /* Settings for scaling */
+  transform: scale( 0.6 );
+  transform-origin: 0 0;
+  transition: transform 0.6s;
+
+  top: calc( 76% - ( 200px / 2 ) );
+  left: calc( 99% - ( 500px * 0.6 ) );
+
+  border-radius: 15px;
+  opacity: 0.9;
+}
+
+#alpr-alert-display .readers {
+  text-align: center;
+  margin-top: -4px;
+}
+
+#alpr-alert-display .readers p {
+  font-family: "Plate-Font";
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 2px;
+  text-shadow: 1px 1px 2px black;
+}
+
+#front-reader-header,
+#rear-reader-header {
+  color: rgb(85, 126, 202);
+  font-size: 38px !important;
+}
+
+.reader-match {
+  color: rgb(197, 197, 197);
+}
+
+#front-reader {
+  margin-bottom: 20px;
+}
+
+#alpr-plate-reader {
+  width: 467px;
+  height: 170px;
+
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-image: url( "../images/pr_bg.png" );
+
+  border: solid 2px black;
+  border-radius: 9px;
+  margin: 16px;
+
+  display: grid;
+  grid-template-rows: 30px 1fr 30px;
+  align-content: center;
+}
+
+#alpr-plate-reader .labels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+}
+
+#alpr-plate-reader .labels .title {
+  color: rgb( 255, 255, 255 );
+}
+
+#alpr-plate-reader .labels p {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.alpr-lock-p {
+  letter-spacing: 3px;
+  color: rgb(128, 125, 125);
+}
+
+#alpr-plate-reader .plates {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: stretch;
+  justify-items: center;
+}
+
+#alpr-plate-reader .plates .plate-container {
+  width: 90%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+#alpr-plate-reader .plates .plate-container .plate {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#alpr-plate-reader .plates .plate-container .text-container {
+  grid-column: 1;
+  grid-row: 1;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+#alpr-plate-reader .plates .plate-container .text-container p {
+  display: block;
+  font-family: "Plate-Font";
+  font-size: 58px;
+  text-align: center;
+  letter-spacing: -3px;
+  padding-top: 8px;
+  margin: 0;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#alpr-plate-reader .plates .plate-container .text-container .hilite {
+  font-family: "Plate-Font-Hilite";
+  color: rgb( 93, 65, 255 );
+}
+
+#alpr-plate-reader .plates .plate-container .text-container .lolite {
+  font-family: "Plate-Font-Lolite";
+  color: rgb( 255, 255, 255 );
+}
+
+#alpr-plate-reader .plates .plate-container .text-container .shadow {
+  font-family: "Plate-Font-Shadow";
+  color: rgb( 100, 100, 100 );
+}
+
+#alpr-settings-volume {
+  font-size: 18px;
+}
+
+#alpr-ui-movement {
+  width: 400px;
+  transition: transform 0.6s;
+  border-radius: 15px;
+  padding: 10px;
+  opacity: 0.9;
+  position: absolute;
+  margin: auto;
+  background-image: url( "../images/pr_frame.png" );
+  top: calc( 50% - 140px );
+  left: calc( 50% - 200px );
+}
+
+#alpr-ui-movement-display {
+  background-image: url( "../images/pr_bg.png" );
+  border-radius: 10px;
+  border: solid 2px black;
+  padding-top: 10px;
+}
+
+#alpr-ui-reader-size {
+  margin-bottom: 10px;
+}
+
+#alpr-ui-controllers {
+  margin-bottom: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#alpr-ui-controllers button {
+  margin-bottom: 10px;
+}
+
+#alpr-ui-movement span {
+  width: 100%;
+}
+
+#alpr-info-text {
+  position: relative;
+  height: 90%;
+  margin-right: 15px;
+}
+
+#alpr-ui-clear-button {
+  position: absolute;
+  bottom: 0;
+  margin-right: 30px;
+}
+
+input[type=text]:focus + label {
+  color: rgb(206, 199, 199) !important;
+}
+
+input[type=text]:focus {
+  border-bottom: 1px solid rgb(206, 199, 199) !important;
+  box-shadow: 0 1px 0 0 rgb(206, 199, 199) !important;
+}
+
+.locked-red {
+  color: rgb(192, 80, 80) !important;
+  text-shadow: 0 0 3px #ee6b6b;
+}
+
+.alert-red {
+	color: rgb(201, 87, 87);
+}
+
+.alert-orange {
+	color: rgb(209, 143, 44);
+}
+
+.plate-blue {
+	color: rgb(0, 0, 163);
+}
+
+.plate-yellow {
+	color: rgb(255, 255, 0);
+}
+
+.alert-bold {
+  font-weight: bold;
+  font-size: 16px;
+}

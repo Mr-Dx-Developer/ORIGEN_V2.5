@@ -1,0 +1,18 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>dons_hotel_1a1_milo_.ymap</Item>
+    <Item>dons_hotel_1a_milo_.ymap</Item>
+    <Item>dons_hotel_1a2_milo_.ymap</Item>
+    <Item>dons_hotel_1a3_milo_.ymap</Item>
+    <Item>dons_hotel_1a4_milo_.ymap</Item>
+    <Item>dons_hotel_1a5_milo_.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames />
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+</CodeWalkerProject>

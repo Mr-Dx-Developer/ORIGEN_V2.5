@@ -1,0 +1,10 @@
+armswirl: EmoteMoving = false, EmoteLoop = true
+armwave: EmoteMoving = false, EmoteLoop = true
+circle_crunch: EmoteMoving = false, EmoteLoop = true
+dig: EmoteMoving = false, EmoteLoop = true
+gangnamstyle: EmoteMoving = false, EmoteLoop = true
+makarena: EmoteMoving = false, EmoteLoop = true
+maraschino: EmoteMoving = false, EmoteLoop = true
+pickfromground: EmoteMoving = false, EmoteLoop = false
+salsa:	EmoteMoving = false, EmoteLoop = true
+what_idk: EmoteMoving = false, EmoteLoop = false

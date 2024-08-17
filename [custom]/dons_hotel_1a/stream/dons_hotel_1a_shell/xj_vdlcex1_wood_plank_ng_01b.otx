@@ -1,0 +1,10 @@
+Version 13 30
+{
+	Image xj_vdlcex1_wood_plank_ng_01b.dds
+	Type Regular
+	PixelFormat DXT1
+	Levels 7
+	Usage DIFFUSE
+	UsageFlags -
+	ExtraFlags 0
+}

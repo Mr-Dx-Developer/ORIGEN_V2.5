@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet"> 
+</head>
+<body>
+
+<!-- ------------------------------------------------ notify ------------------------------------------------------------------------------------------------------------------------------ -->
+
+ <div class="notifyadmin">
+    <div class="notifyadminlineicon">///</div>
+    <!-- <div class="notifyadminlineiconright">///</div> -->
+    <p id="notifyadminwrite" style="text-align: center;display: inline-block; margin-left: 10px; word-break: break-word; font-size: 13px; font-family: deneme; margin-right: 10px; color: white; opacity: 0.7; padding-left:20px; padding-right: 20px;">You'r not my friend you'R my brother my friend</p>
+     <!-- <div class="notifyadmintextpart"><p >asdsaasdasasdsasadsadasasdadsadasdasasd</p></div> -->
+
+ </div>
+
+
+
+<!-- ------------------------------------------------ announce ------------------------------------------------------------------------------------------------------------------------------ -->
+
+     <div class="adminnotifycontainer">
+        <img src="announce.svg" alt="" style=" text-align: center; width: 20px;">
+        <div class="adminnotifybehind"><img src="https://www.pngkit.com/png/full/189-1890440_sis-efekti-sis-renkli-sis-png-resimleri-blue.png" alt=""></div>
+        <div class="adminnotifyhighertext">Announcement</div>
+        <div class="adminnotifyinfo">Tüm araçlar yakın zamanda silinecektir lütfen takipte kalın</div>
+     </div>
+<!-- ------------------------------------------------ screen rcon ------------------------------------------------------------------------------------------------------------------------------ -->
+
+<div class="rcondowntext">RCON MODE [HOME]</div>
+
+<div class="rconpart">
+    <div class="rcantopmessage">RCON CONTROL</div>
+    <div class="rconiconpart">
+        <div id="rconhide" style="width: 17px; height:17px; background-color: rgb(158, 158, 19); border-radius: 3px; margin: 5px; cursor: pointer;"><img src="minus.svg" alt="" style="margin: 4px;"></div>
+        <div id="closercon" style="width: 17px; height:17px; background-color: rgb(210, 30, 30); border-radius: 3px; margin: 5px;  cursor: pointer;"><img src="closebu.svg" alt="" style="margin: 4px;"></div>
+
+    </div>
+   <div class="rconchatpart">
+        <div class="rconchathere">
+            <!-- <div class="rconchathereitem">Deneme</div> -->
+        </div>
+        <div class="rconchatpartinput">
+            <input id="enterrcon" type="text" class="inputnowrcon" placeholder="Please insert command here (like restart scriptname or giveitem)">
+        </div>
+   </div>
+</div>
+ 
+<!-- -------------------------------------------------- Noclip part ------------------------------------------------------------------------------------------------------ -->
+
+
+   <div class="noclippart" id="noclippartid" style="display: none;">
+    <div style="display: flex;">
+    <div style="padding: 5px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; margin-right: 5px; border-radius: 2px; margin-left: 10px;">[W] FORWARD</div>
+    <div style="padding: 5px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; border-radius: 2px; margin-right: 5px;">[S] BACKWARD</div>
+    <div style="padding: 5px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; border-radius: 2px; margin-right: 5px;">[A] LEFT</div>
+    <div style="padding: 5px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; border-radius: 2px; margin-right: 5px;">[D] RIGHT</div>
+    <div style="padding: 5px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; border-radius: 2px; margin-right: 5px;">[Q] UP</div>
+    <div style="padding: 5px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; border-radius: 2px; margin-right: 5px;">[E] DOWN</div>
+    </div>
+
+    <div style="display: flex; margin-top: 10px;"> 
+    <div style="padding: 5px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; margin-right: 5px; border-radius: 2px;">[LEFT SHIFT] SPEED FAST</div>
+    <div style="padding: 5px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; margin-right: 5px; border-radius: 2px;">[LEFT CTRL] SPEED SLOW</div>
+    <div style="padding: 5px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; margin-right: 5px; border-radius: 2px;">[LEFT ALT] SPEED FASTER</div>
+
+
+    </div>
+    
+
+
+
+   </div>
+
+<!-- ---------------------------------------------------- developer spec --------------------------------------------    -->
+  <div class="developermenuspec" style="display: none;" id="developermenuspecid">
+    <div style="position: relative; padding: 10px; width: 100%; background-color: #ccc; text-align: center; font-family: deneme;color: rgba(255, 255, 255, 0.598); color: black;">Online Players</div>
+
+
+    <div class="onlineplayerlistsys" style="display: none;">
+        <div class="onlineplayeritems"> <img src="gamepad.svg" alt="" style="margin-right: 5px; margin-left: 5px;"> Paul Malon  <img src="arrowbeya.svg" alt="" style="margin-left: 5px; margin-right: 5px;"> #2</div>
+        <div class="onlineplayeritems"> <img src="gamepad.svg" alt="" style="margin-right: 5px; margin-left: 5px;"> Paul Malon  <img src="arrowbeya.svg" alt="" style="margin-left: 5px; margin-right: 5px;"> #2</div>
+
+    </div>
+
+
+        <div class="onlineplayerlistsecond" style="display: none;">
+            <div class="onlineplayerselectitems" id="spectateclick" ><img src="search.svg" alt="" style="margin-right: 5px;"> Spectate</div>
+            <div class="onlineplayerselectitems" id="reviveclickdev"><img src="health.svg" alt="" style="margin-right: 5px;"> Revive</div>
+            <div class="onlineplayerselectitems" id="bringclickdev"><img src="getbring.svg" alt="" style="margin-right: 5px;"> Bring</div>
+            <div class="onlineplayerselectitems" id = "gotoclickdev"><img src="getbring.svg" alt="" style="margin-right: 5px;"> Goto</div>
+            <div class="onlineplayerselectitems" id = "healclickdev"><img src="heal.svg" alt="" style="margin-right: 5px;"> Heal</div>
+            <div class="onlineplayerselectitems" id="kickclickdev"><img src="kick.svg" alt="" style="margin-right: 5px;"> Kick</div>
+            <div class="onlineplayerselectitems" id="backtolist"><img src="back.svg" alt="" style="margin-right: 5px;"> Back</div>
+            
+
+
+
+
+
+
+        </div>
+  </div>
+
+
+
+ <!-- ------------------------------------------------- Developer Mod -------------------------------------------------------------------------------------- -->
+
+   <div class="developermenu"  id="developermenuid">
+    <div style="position: relative; text-align: center;  font-family:deneme; font-size: 20px; color: white; margin-top: -50px;">‍💻 Developer Mode</div>
+
+    <div class="developermenupart">
+         <div class="developermenuitem">Entity Settings</div>
+         <div class="developeritempanel" style="   height: 100px; ">
+            <div style="position: relative; margin: 10px;">
+                <label for="cbx3" class="label-cbx" >
+                    <input id="cbx3" type="checkbox" class="invisible" onclick="objectchange(this);" >
+                    <div class="checkbox">
+                      <svg width="20px" height="20px" viewBox="0 0 20 20">
+                        <path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>
+                        <polyline points="4 11 8 15 16 6"></polyline>
+                      </svg>
+                    </div>
+                    <span style="color: white; font-family: deneme; font-size: 14px;margin-left: 10px;">Object View</span>
+                </label>
+            </div>
+
+            <div style="position: relative; margin: 10px;">
+                <label for="cbx4" class="label-cbx" >
+                    <input id="cbx4" type="checkbox" class="invisible"  onclick="vehiclechange(this);" >
+                    <div class="checkbox">
+                      <svg width="20px" height="20px" viewBox="0 0 20 20">
+                        <path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>
+                        <polyline points="4 11 8 15 16 6"></polyline>
+                      </svg>
+                    </div>
+                    <span style="color: white; font-family: deneme; font-size: 14px;margin-left: 10px;">Vehicle View</span>
+                </label>
+            </div>
+
+            <div style="position: relative; margin: 10px;">
+                <label for="cbx5" class="label-cbx" >
+                    <input id="cbx5" type="checkbox" class="invisible" onclick="pedchange(this);" >
+                    <div class="checkbox">
+                      <svg width="20px" height="20px" viewBox="0 0 20 20">
+                        <path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>
+                        <polyline points="4 11 8 15 16 6"></polyline>
+                      </svg>
+                    </div>
+                    <span style="color: white; font-family: deneme; font-size: 14px;margin-left: 10px;">Npc View</span>
+                </label>
+            </div>
+           
+         </div>
+         <div class="developermenuitem">Ped Model</div>
+
+         <div class="developeritempanel" style="   height: 100px; ">
+            <div style="position: relative; margin-top: 10px;">
+                <label for="devmenuped" style="font-family: deneme; font-size: 13px; color: white; margin-right: 10px;">P.Model:</label>
+                <input type="text" id="devmenuped" style="background-color: #b2acac6e; border: none; outline: none;">
+            </div>
+
+            <div style="position: relative; margin-top: 10px;">
+                <label for="devmenupedid" style="font-family: deneme; font-size: 13px; color: white; margin-right: 30px;">P.ID:</label>
+                <input type="number" id="devmenupedid" style="background-color: #b2acac6e; border: none; outline: none;">
+            </div>
+
+            <div style="position: relative; margin-top: 10px;">
+                <button style="background-color: #4A7DFF; border: none; outline: none;font-family: deneme;font-size: 12px; color: #dfd8d8;" id="pedupdate">UPDATE</button>
+            </div>
+        </div>
+
+        <div class="developermenuitem">Other Settings</div>
+        <div class="developeritempanel" style="   height: 100px; ">
+            <div style="position: relative; margin: 10px;">
+                <label for="cbx6" class="label-cbx" >
+                    <input id="cbx6" type="checkbox" class="invisible" onclick="noclip(this);">
+                    <div class="checkbox">
+                      <svg width="20px" height="20px" viewBox="0 0 20 20">
+                        <path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>
+                        <polyline points="4 11 8 15 16 6"></polyline>
+                      </svg>
+                    </div>
+                    <span style="color: white; font-family: deneme; font-size: 14px;margin-left: 10px;" >Noclip</span>
+                </label>
+            </div>
+
+            <div style="position: relative; margin: 10px;">
+                <label for="cbx7" class="label-cbx" >
+                    <input id="cbx7" type="checkbox" class="invisible" onclick="undamaged(this);">
+                    <div class="checkbox">
+                      <svg width="20px" height="20px" viewBox="0 0 20 20">
+                        <path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>
+                        <polyline points="4 11 8 15 16 6"></polyline>
+                      </svg>
+                    </div>
+                    <span style="color: white; font-family: deneme; font-size: 14px;margin-left: 10px;">Undamaged</span>
+                </label>
+            </div>
+
+            <div style="position: relative; margin: 10px;">
+                <label for="cbx8" class="label-cbx" >
+                    <input id="cbx8" type="checkbox" class="invisible" onclick="playerfast(this);">
+                    <div class="checkbox">
+                      <svg width="20px" height="20px" viewBox="0 0 20 20">
+                        <path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>
+                        <polyline points="4 11 8 15 16 6"></polyline>
+                      </svg>
+                    </div>
+                    <span style="color: white; font-family: deneme; font-size: 14px;margin-left: 10px;">Speed</span>
+                </label>
+            </div>
+
+        </div>
+
+        <button style="width: 100%;background-color: rgba(240, 248, 255, 0.659); font-family:deneme; font-size: 11px;">ACTIVE [G] /HIDE [ESC]</button>
+
+    </div>
+ 
+   </div>
+
+
+
+
+
+  <!-- --------------------------------------------- enter ban -------------------------------------------------------------------------------- -->
+  <div class="addbanpart">
+    <div class="banmenu">
+        <div style="position: relative; text-align: center;  font-family:deneme; font-size: 14px; color: white;">Ban Settings</div>
+        <div style="position: relative; width: 250px; height: 20px;  font-family:deneme; font-size: 13px; color: rgba(255, 255, 255, 0.598); margin-left: 130px; margin-top: 15px;">
+           Write the reason for ban !!
+        </div>
+        <input type="text" style="margin-left: 115px; margin-top: 10px; outline: none; border: none;" id="baninput">
+        <div style="position: relative; width: 250px; height: 20px;  font-family:deneme; font-size: 13px; color: rgba(255, 255, 255, 0.598); margin-left: 140px; margin-top: 15px;">
+            Please select ban time !!
+         </div>
+        <div style="position: relative; text-align: center;  font-family:deneme; font-size: 14px; color: white;">
+            <!-- <span style="text-align: center; font-family: deneme; font-size: 15px;">TIME</span> -->
+            <select name="" style="font-family:deneme; font-size: 13px; border: none; outline: none;"  id="bantimeid" >
+                <option value="2h">2 Hours</option>
+                <option value="1d">1 Day</option>
+                <option value="3d">3 Day</option>
+                <option value="7d"> 7 DAY</option>
+                <option value="1m">1 Month</option>
+                <option value="3m">3 Month</option>
+                <option value="1y">1 Year</option>
+                <option value="un">Unlimited</option>
+
+
+
+            </select>
+        </div>
+
+        <div style="position: relative; width: 150px; margin-left: 145px; margin-top: 25px;">
+            <div style="display: inline-block; padding: 5px; background-color: rgba(240, 248, 255, 0.659); font-family:deneme; font-size: 11px; cursor: pointer; " id="banyes" > Confirm</div>
+            <div style="display: inline-block; padding: 5px; background-color: rgba(240, 248, 255, 0.659); font-family:deneme; font-size: 11px; margin-left: 10px; cursor: pointer; " id="banno"> Cancel</div>
+
+        </div>
+        
+    </div>
+  </div>
+
+
+
+  <!-- --------------------------------------------- enter image url -------------------------------------------------------------------------------- -->
+
+    <div class="addimagepart">
+
+        <div class="imageboxcenter">
+            <div class="imageboxinput">
+                <input id="imageinput" type="text" style="width: 80%; height: 100%; outline: none; border: none;background: #535353; color: rgba(255, 255, 255, 0.559); margin-left: 10px; ">
+                <span style="width: 5%; height: 100%;background: #53535300; " >
+                    <svg id="imageenterlar" width="29" height="29" style="margin-top: 1px; margin-left:20px; padding-left:5px;" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 494.554 494.554" style="enable-background:new 0 0 494.554 494.554;" xml:space="preserve"> <g> <path fill="white" fill-opacity="0.65" d="M464.962,16.626C464.962,7.441,457.507,0,448.337,0H114.845c-9.171,0-16.626,7.441-16.626,16.626v141.807h33.252V33.252 H431.71v351.659h-59.795c-9.176,0-16.625,7.436-16.625,16.627v59.766H131.471V337.159H98.219v140.769 c0,9.186,7.455,16.626,16.626,16.626h257.07c4.593,0,8.749-1.87,11.752-4.873l0,0l0.016-0.016l76.391-76.359l0.016-0.016l0,0 c3.008-3.004,4.873-7.16,4.873-11.752V16.626z"/> <path fill="white" fill-opacity="0.65" d="M172.989,327.305c0,5.875,3.538,11.186,8.977,13.428c1.803,0.744,3.689,1.104,5.569,1.104 c3.798,0,7.519-1.474,10.292-4.255l79.492-79.508c2.728-2.728,4.272-6.426,4.272-10.277c0-3.865-1.544-7.563-4.272-10.291 l-79.492-79.492c-2.789-2.795-6.509-4.27-10.292-4.27c-1.881,0-3.767,0.359-5.569,1.101c-5.439,2.26-8.977,7.57-8.977,13.445 v23.396H44.139c-8.022,0-14.548,6.508-14.548,14.547v83.129c0,8.037,6.525,14.549,14.548,14.549h128.85V327.305z"/> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+        
+                        
+                </span>
+            </div>
+            <div class="imagepartext">Enter Url</div>
+        
+        </div>
+        
+    </div>
+
+
+
+    <!-- --------------------------------------- savequestion ------------------------------------------------------------------------- -->
+
+
+
+    <div class="savequestion">
+        <div style="position: relative; text-align: center;  font-family:deneme; font-size: 14px; color: white;">Object Save</div>
+        <div style="position: relative; width: 150px; height: 50px;  font-family:deneme; font-size: 13px; color: rgba(255, 255, 255, 0.598); margin-left: 70px;">
+            Do you want to save the object to data ?
+        </div>
+        <div style="position: relative; width: 150px; margin-left: 70px;">
+            <div style="display: inline-block; padding: 5px; background-color: rgba(240, 248, 255, 0.659); font-family:deneme; font-size: 11px; " id="objectyes"> Yes</div>
+            <div style="display: inline-block; padding: 5px; background-color: rgba(240, 248, 255, 0.659); font-family:deneme; font-size: 11px; margin-left: 10px; " id="objectno"> No</div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- --------------------------------------- vehicletopspawntext ------------------------------------------------------------------------- -->
+
+    
+    <div class="vehicletopspawntext" style=" display: none;">
+        <div style="padding: 5px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; margin-right: 20px; border-radius: 5px;">[G] SPAWN</div>
+        <div style="padding: 5px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; border-radius: 5px;">[H] CANCEL</div>
+
+    </div>
+
+    <div class="objecttopspawntext" style="display:none;">
+        <div style="padding: 3px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; margin-right: 5px; border-radius: 2px;">⬅️</div>
+        <div style="padding: 3px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; margin-right: 5px; border-radius: 2px;">➡️</div>
+        <div style="padding: 3px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; margin-right: 5px; border-radius: 2px;">⬆️</div>
+        <div style="padding: 3px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; border-radius: 2px; margin-right: 5px;">⬇️</div>
+        <div style="padding: 3px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black;  border-radius: 2px;">Z Up</div>
+
+
+        
+        
+
+        <div style="padding: 4px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; border-radius: 2px; margin-right: 5px; margin-top: 5px; ">G Rotate</div>
+        <div style="padding: 4px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; border-radius: 2px;margin-top: 5px;margin-right: 5px; ">H Rotate</div>
+        <div style="padding: 3px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black;  border-radius: 2px; margin-top: 5px;">X Down</div>
+
+        <div style="padding: 4px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; border-radius: 2px; margin-right: 5px; margin-top: 5px; ">B Rotate</div>
+        <div style="padding: 4px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; border-radius: 2px;margin-top: 5px;margin-right: 5px; ">N Rotate</div>
+        <div style="padding: 4px; font-family: deneme; font-size: 12px; background-color: #ffffffc7; color: black; border-radius: 2px;margin-top: 5px; ">Enter</div>
+
+    </div>
+
+    
+
+
+
+    <!-- --------------------------------------- screenmenu ------------------------------------------------------------------------- -->
+
+    <div class="screenmenu" style="display: none;">
+        <div class="loadermain" style="display: none;">
+            <div class="loadertext">Loading...</div>
+            <div class="loader"></div>
+        </div>
+
+        <div class="screenplayersettings" style="display: none;">
+            <div class="screenplayerexit">
+                <svg version="1.1" style="width: 25px; " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <g> <path style="fill: rgba(120, 10, 10, 0.531);" d="M510.371,226.513c-1.088-2.603-2.645-4.971-4.629-6.955l-63.979-63.979c-8.341-8.32-21.824-8.32-30.165,0 c-8.341,8.341-8.341,21.845,0,30.165l27.584,27.584H320.013c-11.797,0-21.333,9.557-21.333,21.333s9.536,21.333,21.333,21.333 h119.168l-27.584,27.584c-8.341,8.341-8.341,21.845,0,30.165c4.16,4.181,9.621,6.251,15.083,6.251s10.923-2.069,15.083-6.251 l63.979-63.979c1.984-1.963,3.541-4.331,4.629-6.955C512.525,237.606,512.525,231.718,510.371,226.513z"/> <path style="fill: rgba(175, 171, 171, 0.827);" d="M362.68,298.667c-11.797,0-21.333,9.557-21.333,21.333v106.667h-85.333V85.333c0-9.408-6.187-17.728-15.211-20.437 l-74.091-22.229h174.635v106.667c0,11.776,9.536,21.333,21.333,21.333s21.333-9.557,21.333-21.333v-128 C384.013,9.557,374.477,0,362.68,0H21.347c-0.768,0-1.451,0.32-2.197,0.405c-1.003,0.107-1.92,0.277-2.88,0.512 c-2.24,0.576-4.267,1.451-6.165,2.645c-0.469,0.299-1.045,0.32-1.493,0.661C8.44,4.352,8.376,4.587,8.205,4.715 C5.88,6.549,3.939,8.789,2.531,11.456c-0.299,0.576-0.363,1.195-0.597,1.792c-0.683,1.621-1.429,3.2-1.685,4.992 c-0.107,0.64,0.085,1.237,0.064,1.856c-0.021,0.427-0.299,0.811-0.299,1.237V448c0,10.176,7.189,18.923,17.152,20.907 l213.333,42.667c1.387,0.299,2.795,0.427,4.181,0.427c4.885,0,9.685-1.685,13.525-4.843c4.928-4.053,7.808-10.091,7.808-16.491 v-21.333H362.68c11.797,0,21.333-9.557,21.333-21.333V320C384.013,308.224,374.477,298.667,362.68,298.667z"/> </g> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+            </div>
+            <div class="screen_player_settings_name">⚙️ PLAYER SETTINGS ⚙️</div>
+
+            <div class="user-detail">
+                <div class="settingscardimg"><img id="settingsdekiimg" src="https://i.pinimg.com/736x/74/d0/2f/74d02fcf6126975c6507843a9315d6e8.jpg" alt="" ></div>
+                <div class="user_textpart">
+                     <div class="user_textupper">Name: <a style="color: rgba(255, 255, 255, 0.645); margin-left: 10px;" id="playername"> Paul Malon</a></div>
+                     <div class="user_textupper">ID: <a style="color: rgba(255, 255, 255, 0.645); margin-left: 10px;" id="playerid">25</a></div></br></br></br>
+                     <div class="user_textupper" >JOB: <a style="color: rgba(255, 255, 255, 0.645); margin-left: 10px;" id="playerjob">POLICE</a></div>
+                     <div class="user_textupper" style="margin-left: 40px; ">STEAM: <a style="color: rgba(255, 255, 255, 0.645);width: 150px; display: inline-block;text-overflow: ellipsis;margin: 0 0 -0.23em 0; overflow: hidden;" id="steamname"><br> asdaasdsaass</a></div>
+
+                </div>
+               
+            </div>
+            
+          <div class="screenplayersettingsbutton">
+            <div class="screenplayersettingsbutton-button" id="playerrevive">♻ Revive</div>
+            <div class="screenplayersettingsbutton-button" id="playerheal">❤️‍ Heal</div>
+            <div class="screenplayersettingsbutton-button" id="playerbring">🙌🏻 Bring</div>
+            <div class="screenplayersettingsbutton-button" id="playergoto">🙌🏻 Go To</div>
+            <div class="screenplayersettingsbutton-button" id="playerkick">🦶 Kick</div>
+            <div class="screenplayersettingsbutton-button" id="playerban">❌ Ban</div>
+
+
+          </div>
+           
+        </div>
+
+
+        <!-- --------------------------------------- screenmenu for vehicle ------------------------------------------------------------------------- -->
+        <div class="screenvehiclesettings" style="display: none;">
+            <div class="screenvehicleexit">
+                <svg version="1.1" style="width: 25px; " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <g> <path style="fill: rgba(120, 10, 10, 0.531);" d="M510.371,226.513c-1.088-2.603-2.645-4.971-4.629-6.955l-63.979-63.979c-8.341-8.32-21.824-8.32-30.165,0 c-8.341,8.341-8.341,21.845,0,30.165l27.584,27.584H320.013c-11.797,0-21.333,9.557-21.333,21.333s9.536,21.333,21.333,21.333 h119.168l-27.584,27.584c-8.341,8.341-8.341,21.845,0,30.165c4.16,4.181,9.621,6.251,15.083,6.251s10.923-2.069,15.083-6.251 l63.979-63.979c1.984-1.963,3.541-4.331,4.629-6.955C512.525,237.606,512.525,231.718,510.371,226.513z"/> <path style="fill: rgba(175, 171, 171, 0.827);" d="M362.68,298.667c-11.797,0-21.333,9.557-21.333,21.333v106.667h-85.333V85.333c0-9.408-6.187-17.728-15.211-20.437 l-74.091-22.229h174.635v106.667c0,11.776,9.536,21.333,21.333,21.333s21.333-9.557,21.333-21.333v-128 C384.013,9.557,374.477,0,362.68,0H21.347c-0.768,0-1.451,0.32-2.197,0.405c-1.003,0.107-1.92,0.277-2.88,0.512 c-2.24,0.576-4.267,1.451-6.165,2.645c-0.469,0.299-1.045,0.32-1.493,0.661C8.44,4.352,8.376,4.587,8.205,4.715 C5.88,6.549,3.939,8.789,2.531,11.456c-0.299,0.576-0.363,1.195-0.597,1.792c-0.683,1.621-1.429,3.2-1.685,4.992 c-0.107,0.64,0.085,1.237,0.064,1.856c-0.021,0.427-0.299,0.811-0.299,1.237V448c0,10.176,7.189,18.923,17.152,20.907 l213.333,42.667c1.387,0.299,2.795,0.427,4.181,0.427c4.885,0,9.685-1.685,13.525-4.843c4.928-4.053,7.808-10.091,7.808-16.491 v-21.333H362.68c11.797,0,21.333-9.557,21.333-21.333V320C384.013,308.224,374.477,298.667,362.68,298.667z"/> </g> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+            </div>
+
+  
+            <div class="top-text-vehicle">SULTANRS</div>
+
+            <div class="center-vehicle-inputs">
+                <span style="text-align: center; font-family: deneme; font-size: 15px;">
+                 PLATE</span> <input maxlength='8' type="text" style="margin-top: 20px;" class="dest" id="getvehicleplate">
+            </div>
+            
+            <div class="center-vehicle-selects">
+                <span style="text-align: center; font-family: deneme; font-size: 15px;">COLOR</span>
+                <select name="" id="getvehiclecolor" class="vehicleselectcolor">
+                    <option value="27">RED</option>
+                    <option value="73">BLUE</option>
+                    <option value="89">YELLOW</option>
+                    <option value="0">BLACK</option>
+                    <option value="111">WHITE</option>
+                    <option value="135">PINK</option>
+                    <option value="138">ORANGE</option>
+                    <option value="145">PURPLE</option>
+
+
+
+                </select>
+            </div>
+
+            <div class="center-vehicle-currect">
+                <span style="text-align: center; font-family: deneme; font-size: 15px;">EXTRA</span>
+                <form style="text-align: center; margin-top: 30px; font-family: deneme; font-size: 15px;color: rgb(162, 167, 172);">
+                    <input type="checkbox" id="getvehiclemods" name="getvehiclemods" value="Bike" style="margin-bottom: 10px;">
+                    <label for="getvehiclemods">Full Mods</label><br>
+                    <input type="checkbox" id="getvehicleturbo" name="getvehicleturbo" value="Car" style="margin-bottom: 10px;">
+                    <label for="getvehicleturbo">Turbo</label><br>
+                    <input type="checkbox" id="getvehicledamage" name="getvehicledamage" value="Boat">
+                    <label for="getvehicledamage">In Vehicle</label><br><br>
+              
+                </form>
+            </div>
+
+            <div class="center-vehicle-button">
+                <button style="height: 44px;font-family: deneme; font-size: 14px;color: rgba(255, 255, 255, 0.508); background: #4a7dff90; border: 1px solid #4a7dff90; cursor: pointer;" id="vehiclespawnconfirm">Confirm</button>
+            </div>
+        </div>
+
+
+        <!-- -------------------------- screen ban -----------------------  -->
+        <div class="screenbansettings" style="display: none;">
+            <div class="screenbanexit">
+                <svg version="1.1" style="width: 25px; " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <g> <path style="fill: rgba(120, 10, 10, 0.531);" d="M510.371,226.513c-1.088-2.603-2.645-4.971-4.629-6.955l-63.979-63.979c-8.341-8.32-21.824-8.32-30.165,0 c-8.341,8.341-8.341,21.845,0,30.165l27.584,27.584H320.013c-11.797,0-21.333,9.557-21.333,21.333s9.536,21.333,21.333,21.333 h119.168l-27.584,27.584c-8.341,8.341-8.341,21.845,0,30.165c4.16,4.181,9.621,6.251,15.083,6.251s10.923-2.069,15.083-6.251 l63.979-63.979c1.984-1.963,3.541-4.331,4.629-6.955C512.525,237.606,512.525,231.718,510.371,226.513z"/> <path style="fill: rgba(175, 171, 171, 0.827);" d="M362.68,298.667c-11.797,0-21.333,9.557-21.333,21.333v106.667h-85.333V85.333c0-9.408-6.187-17.728-15.211-20.437 l-74.091-22.229h174.635v106.667c0,11.776,9.536,21.333,21.333,21.333s21.333-9.557,21.333-21.333v-128 C384.013,9.557,374.477,0,362.68,0H21.347c-0.768,0-1.451,0.32-2.197,0.405c-1.003,0.107-1.92,0.277-2.88,0.512 c-2.24,0.576-4.267,1.451-6.165,2.645c-0.469,0.299-1.045,0.32-1.493,0.661C8.44,4.352,8.376,4.587,8.205,4.715 C5.88,6.549,3.939,8.789,2.531,11.456c-0.299,0.576-0.363,1.195-0.597,1.792c-0.683,1.621-1.429,3.2-1.685,4.992 c-0.107,0.64,0.085,1.237,0.064,1.856c-0.021,0.427-0.299,0.811-0.299,1.237V448c0,10.176,7.189,18.923,17.152,20.907 l213.333,42.667c1.387,0.299,2.795,0.427,4.181,0.427c4.885,0,9.685-1.685,13.525-4.843c4.928-4.053,7.808-10.091,7.808-16.491 v-21.333H362.68c11.797,0,21.333-9.557,21.333-21.333V320C384.013,308.224,374.477,298.667,362.68,298.667z"/> </g> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+            </div>
+
+  
+            <div class="top-text-ban">BAN INFO</div>
+
+            <div style="position: relative; text-align: center;  font-family:deneme; font-size: 14px; color: rgba(255, 255, 255, 0.544); margin-top: 20px;">REASON</div>
+
+            <div style="position: relative; text-align: center;  font-family:deneme; font-size: 14px; color: rgba(255, 255, 255, 0.544); margin-top: 20px; width: 200px; height: 50px;  margin-left: 50px;" id="banreasonwrite">
+                He kill 3 people in motel !!
+            </div>
+
+            <div style="position: relative; text-align: center;  font-family:deneme; font-size: 14px; color: rgba(255, 255, 255, 0.544); margin-top: 20px;">NAME</div>
+
+            <div style="position: relative; text-align: center;  font-family:deneme; font-size: 14px; color: rgba(255, 255, 255, 0.544); margin-top: 20px; width: 200px; height: 50px; margin-left: 50px;" id="banreasonname">
+                Paul Malon
+            </div>
+
+        </div>
+
+
+        <div class="screenticketsettings"  style="display: none;">
+            <div class="screenticketexit">
+                <svg version="1.1" style="width: 25px; " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <g> <path style="fill: rgba(120, 10, 10, 0.531);" d="M510.371,226.513c-1.088-2.603-2.645-4.971-4.629-6.955l-63.979-63.979c-8.341-8.32-21.824-8.32-30.165,0 c-8.341,8.341-8.341,21.845,0,30.165l27.584,27.584H320.013c-11.797,0-21.333,9.557-21.333,21.333s9.536,21.333,21.333,21.333 h119.168l-27.584,27.584c-8.341,8.341-8.341,21.845,0,30.165c4.16,4.181,9.621,6.251,15.083,6.251s10.923-2.069,15.083-6.251 l63.979-63.979c1.984-1.963,3.541-4.331,4.629-6.955C512.525,237.606,512.525,231.718,510.371,226.513z"/> <path style="fill: rgba(175, 171, 171, 0.827);" d="M362.68,298.667c-11.797,0-21.333,9.557-21.333,21.333v106.667h-85.333V85.333c0-9.408-6.187-17.728-15.211-20.437 l-74.091-22.229h174.635v106.667c0,11.776,9.536,21.333,21.333,21.333s21.333-9.557,21.333-21.333v-128 C384.013,9.557,374.477,0,362.68,0H21.347c-0.768,0-1.451,0.32-2.197,0.405c-1.003,0.107-1.92,0.277-2.88,0.512 c-2.24,0.576-4.267,1.451-6.165,2.645c-0.469,0.299-1.045,0.32-1.493,0.661C8.44,4.352,8.376,4.587,8.205,4.715 C5.88,6.549,3.939,8.789,2.531,11.456c-0.299,0.576-0.363,1.195-0.597,1.792c-0.683,1.621-1.429,3.2-1.685,4.992 c-0.107,0.64,0.085,1.237,0.064,1.856c-0.021,0.427-0.299,0.811-0.299,1.237V448c0,10.176,7.189,18.923,17.152,20.907 l213.333,42.667c1.387,0.299,2.795,0.427,4.181,0.427c4.885,0,9.685-1.685,13.525-4.843c4.928-4.053,7.808-10.091,7.808-16.491 v-21.333H362.68c11.797,0,21.333-9.557,21.333-21.333V320C384.013,308.224,374.477,298.667,362.68,298.667z"/> </g> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+            </div>
+
+  
+            <div class="top-text-ticket">NEW TICKET</div>
+
+            <div style="position: relative; text-align: center;  font-family:deneme; font-size: 14px; color: rgba(255, 255, 255, 0.544); margin-top: 20px;">TICKET T.</div>
+
+            <input style="position: relative; text-align: center;  font-family:deneme; font-size: 14px; color: rgba(49, 49, 49, 0.544); margin-top: 20px; width: 200px; height: 30px;  margin-left: 50px; background-color: #e9dcdce2; outline: none; border: none;"  id="tickettopwriteid"/>
+
+
+            <div style="position: relative; text-align: center;  font-family:deneme; font-size: 14px; color: rgba(255, 255, 255, 0.544); margin-top: 20px;">TICKET M.</div>
+
+            <input style="position: relative; text-align: center;  font-family:deneme; font-size: 14px; color: rgba(50, 48, 48, 0.544); margin-top: 20px; width: 200px; height: 70px;  margin-left: 50px;background-color: #e9dcdce2; outline: none; border: none;" id="ticketmsgwriteid" />
+            <div class="center-ticket-button">
+                <button style="height: 44px;font-family: deneme; font-size: 14px;color: rgba(255, 255, 255, 0.508); background: #4a7dff90; border: 1px solid #4a7dff90; cursor: pointer;" id="ticketsendid">SEND TICKET</button>
+            </div>
+
+        </div>
+
+
+       
+
+
+
+        
+    </div>
+    
+
+    <!-- ---------------------------------------  ------------------------------------------------------------------------- -->
+
+    <!-- <div class="logoadmin">
+        <img src="admin.png" alt="">
+    </div> -->
+
+
+    <!-- ---------------------------------------  ------------------------------------------------------------------------- -->
+    <div class="adminmain" style="display: none;" >
+
+      
+        <div class="adminleftline">
+            <div class="adminleftlineicon">///</div>
+            <div class="adminleftlineicon2">///</div>
+
+        </div>
+
+        <div class="leftmenu" >
+
+           
+            <div class="leftmenu-items" id="playerlistimiz" >Players</div>
+            <div class="leftmenu-items" id="vehiclelistidsi">Vehicles</div>
+            <div class="leftmenu-items" id="objectlistidsi">Objects</div>
+            <div class="leftmenu-items" id="playersupportidsi">Player Support</div>
+            <div class="leftmenu-items" id="adminextraidsi">Extra Settings</div>
+            <div class="leftmenu-items" id="adminlogidsi">Admin Log</div>
+            <div class="leftmenu-items"  id="adminrconon">Rcon (Cmd)</div>
+
+    
+           
+        </div>
+       
+         <!-- -------------------------- player-list ------------------------------------------  -->
+        <div class="playerlist" style="display: none;">
+            <div class="firstinput" >
+                <div class="iconandtextdiv">
+                    <div class="icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.65" d="M23 23L17.8057 17.7964M20.6842 10.8421C20.6842 13.4524 19.6473 15.9558 17.8015 17.8015C15.9558 19.6473 13.4524 20.6842 10.8421 20.6842C8.23182 20.6842 5.72844 19.6473 3.88269 17.8015C2.03693 15.9558 1 13.4524 1 10.8421C1 8.23182 2.03693 5.72844 3.88269 3.88269C5.72844 2.03693 8.23182 1 10.8421 1C13.4524 1 15.9558 2.03693 17.8015 3.88269C19.6473 5.72844 20.6842 8.23182 20.6842 10.8421Z" stroke="white" stroke-opacity="0.65" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                    </div>
+                    <div class="icontext" style="font-size: 15px;">
+                    <input type="text" id="searcinputwith2"  placeholder="Search Player" style="width: 390px; height:35px;font-size: 13px; background-color: transparent; border: none; outline: none; font-family: deneme;  text-align: center; color: #FFFFFF; opacity: 0.8;">
+                    </div>
+                </div>
+           </div>
+            <div class="playerlisttopname">Player List</div>
+            <div id="playerlistinsert" class="playerlistinsertclass">
+                  
+                <!-- <div class="playerlist-item">
+                    <div class="playerlist-item-active">
+                        <img src="online.svg" alt="" style="width: 12px; margin-top:-8px;">
+                        <div style="float:left; margin-top:0px; margin-left: 10px;">Online</div>
+                    </div>
+                    <div class="playerlist-item-ayrac"></div>
+                    <div class="playerlist-item-playername">
+                        <div style="margin-top: 8px;">Paul Malon</div>
+                    </div>
+                    <div class="playerlist-item-playerid">
+                        <div style="margin-top: 4px;">241</div>
+                    </div>
+                    <div class="playerlist-item-ayrac" style="margin-left: 15px;"></div>
+                    <div class="playerlist-item-playerinfo">
+                        <div style="margin-top: 8px; float: left;">IDENTY ID : STEAM:214124215</div>
+                        <div style="margin-top: 8px; margin-left: 20px; float: left;">JOB : POLICE</div>
+                    </div>
+                    <div class="playerlist-item-settings">
+                        <div class="playerlist-item-button">
+                            Settings
+                            <img src="settings.svg" alt="" style="width: 10px;">
+                        </div>
+                    </div>
+
+                </div> -->
+
+             
+                
+            </div>
+        </div>
+
+         <!-- -------------------------- player-ban-list ------------------------------------------  -->
+
+
+         <div class="playerbanlist">
+            <div class="firstinput" >
+                <div class="iconandtextdiv">
+                    <div class="icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.65" d="M23 23L17.8057 17.7964M20.6842 10.8421C20.6842 13.4524 19.6473 15.9558 17.8015 17.8015C15.9558 19.6473 13.4524 20.6842 10.8421 20.6842C8.23182 20.6842 5.72844 19.6473 3.88269 17.8015C2.03693 15.9558 1 13.4524 1 10.8421C1 8.23182 2.03693 5.72844 3.88269 3.88269C5.72844 2.03693 8.23182 1 10.8421 1C13.4524 1 15.9558 2.03693 17.8015 3.88269C19.6473 5.72844 20.6842 8.23182 20.6842 10.8421Z" stroke="white" stroke-opacity="0.65" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                    </div>
+                    <div class="icontext" style="font-size: 15px;">
+                    <input type="text" id="searcinputwith3"  placeholder="Search Player" style="width: 390px; height:35px;font-size: 13px; background-color: transparent; border: none; outline: none; font-family: deneme;  text-align: center; color: #FFFFFF; opacity: 0.8;">
+                    </div>
+                </div>
+           </div>
+            <div class="playerlisttopname">Player Ban List</div>
+
+            <div id="playerbanlistid" class="playerbanlistclass">
+                <!-- <div class="playerbanlist-item">
+                    <div class="playerbanlist-item-active">
+                       <img src="ignore.svg" alt="">
+                    </div>
+
+                    <div class="playerbanlist-item-ayrac"></div>
+
+                    <div class="playerbanlist-item-playername">
+                        <div style="margin-top: 5px;">Paul Malon</div>
+                    </div>
+                    <div class="playerbanlist-item-playername">
+                        <div style="margin-top: 5px;">-</div>
+                    </div>
+
+                    <div class="playerbanlist-item-playerinfo">
+                        <div style="margin-top: 5px; float: left;">Reason : he sould attack rdm</div>
+                    </div>
+                    <div class="playerbanlist-item-ayrac"></div>
+
+                    <div class="playerbanlist-item-playerdate">
+                        <div style="margin-top: 5px;">INFINITY</div>
+                    </div>
+                    <div class="playerbanlist-item-delete">
+                        <div class="playerbanlist-item-button">
+                            Delete
+                            <img src="delete.svg" alt="" style="width: 10px;">
+                            
+                        </div>
+                        <div class="playerbanlist-item-button" style="margin-left: 15px;">
+                            INFO
+                            <svg version="1.1" style="width: 10px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="416.979px" height="416.979px" viewBox="0 0 416.979 416.979" style="enable-background:new 0 0 416.979 416.979;" xml:space="preserve"> <g> <path d="M356.004,61.156c-81.37-81.47-213.377-81.551-294.848-0.182c-81.47,81.371-81.552,213.379-0.181,294.85 c81.369,81.47,213.378,81.551,294.849,0.181C437.293,274.636,437.375,142.626,356.004,61.156z M237.6,340.786 c0,3.217-2.607,5.822-5.822,5.822h-46.576c-3.215,0-5.822-2.605-5.822-5.822V167.885c0-3.217,2.607-5.822,5.822-5.822h46.576 c3.215,0,5.822,2.604,5.822,5.822V340.786z M208.49,137.901c-18.618,0-33.766-15.146-33.766-33.765 c0-18.617,15.147-33.766,33.766-33.766c18.619,0,33.766,15.148,33.766,33.766C242.256,122.755,227.107,137.901,208.49,137.901z"/> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+                            
+                        </div>
+                    </div>
+
+                </div> -->
+            </div>
+
+
+
+            
+        </div>
+
+        <!-- ------------------------------------------------------------------------- vehicle settings -------------------------------------------------------------------------------- -->
+
+
+       <div class="vehiclelist" style="display: none;">
+
+        <div class="firstinput" >
+            <div class="iconandtextdiv">
+                <div class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.65" d="M23 23L17.8057 17.7964M20.6842 10.8421C20.6842 13.4524 19.6473 15.9558 17.8015 17.8015C15.9558 19.6473 13.4524 20.6842 10.8421 20.6842C8.23182 20.6842 5.72844 19.6473 3.88269 17.8015C2.03693 15.9558 1 13.4524 1 10.8421C1 8.23182 2.03693 5.72844 3.88269 3.88269C5.72844 2.03693 8.23182 1 10.8421 1C13.4524 1 15.9558 2.03693 17.8015 3.88269C19.6473 5.72844 20.6842 8.23182 20.6842 10.8421Z" stroke="white" stroke-opacity="0.65" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                </div>
+                <div class="icontext" style="font-size: 15px;">
+                <input type="text" id="searcinputwith4"  placeholder="Search Vehicle" style="width: 390px; height:35px;font-size: 13px; background-color: transparent; border: none; outline: none; font-family: deneme;  text-align: center; color: #FFFFFF; opacity: 0.8;">
+                </div>
+            </div>
+       </div>
+
+       <div class="playervehicletopname">Vehicle List</div>
+
+
+        <div id="vehiclelistbeyaid" class="vehiclelistbeyaclass">
+                <div class="vehiclelistcard">
+                    <div class="vehiclelistcardimage">
+                        <img src="https://wiki.gtanet.work/images/thumb/1/11/SultanRS.png/120px-SultanRS.png" alt="" class="imgdeger">
+                    </div>
+                    <div class="vehiclelistcardname">Sultanrs</div>
+                    
+                </div>
+                <div class="vehiclelistcard">
+                    <div class="vehiclelistcardimage">
+                        <img src="https://wiki.gtanet.work/images/thumb/2/2b/Zentorno.png/120px-Zentorno.png" alt="" class="imgdeger">
+                    </div>
+                    <div class="vehiclelistcardname">Zentorno</div>
+                    
+                </div>
+                
+                <div class="vehiclelistcard">
+                    <div class="vehiclelistcardimage">
+                        <img src="https://wiki.gtanet.work/images/thumb/2/2b/Zentorno.png/120px-Zentorno.png" alt="" class="imgdeger">
+                    </div>
+                    <div class="vehiclelistcardname">Zentorno</div>
+                    
+                </div>
+          </div>
+        </div>
+
+
+        <!-- ------------------------------------------------------------------------- object settings -------------------------------------------------------------------------------- -->
+
+        <!-- <div class="searchvehiclebutton" style="display:none;">
+            <div class="iconandtextdiv" style="margin-left: 35px; margin-top: 18px;">
+                <div class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.65" d="M23 23L17.8057 17.7964M20.6842 10.8421C20.6842 13.4524 19.6473 15.9558 17.8015 17.8015C15.9558 19.6473 13.4524 20.6842 10.8421 20.6842C8.23182 20.6842 5.72844 19.6473 3.88269 17.8015C2.03693 15.9558 1 13.4524 1 10.8421C1 8.23182 2.03693 5.72844 3.88269 3.88269C5.72844 2.03693 8.23182 1 10.8421 1C13.4524 1 15.9558 2.03693 17.8015 3.88269C19.6473 5.72844 20.6842 8.23182 20.6842 10.8421Z" stroke="white" stroke-opacity="0.65" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                </div>
+                <div class="icontext" style="font-size: 15px; margin-left: 15px; margin-top: -7px;">
+                <input type="text" id="searcinputwith"  placeholder="Search Object" style="width: 390px; height:35px;font-size: 13px; background-color: transparent; border: none; outline: none; font-family: popbe;  text-align: center; color: #FFFFFF; opacity: 0.8;">
+                </div>
+            </div>
+       </div> -->
+
+       <div class="objectlist" style="display:none;">
+
+            <div class="firstinput" >
+                <div class="iconandtextdiv">
+                    <div class="icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.65" d="M23 23L17.8057 17.7964M20.6842 10.8421C20.6842 13.4524 19.6473 15.9558 17.8015 17.8015C15.9558 19.6473 13.4524 20.6842 10.8421 20.6842C8.23182 20.6842 5.72844 19.6473 3.88269 17.8015C2.03693 15.9558 1 13.4524 1 10.8421C1 8.23182 2.03693 5.72844 3.88269 3.88269C5.72844 2.03693 8.23182 1 10.8421 1C13.4524 1 15.9558 2.03693 17.8015 3.88269C19.6473 5.72844 20.6842 8.23182 20.6842 10.8421Z" stroke="white" stroke-opacity="0.65" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                    </div>
+                    <div class="icontext" style="font-size: 15px;">
+                    <input type="text" id="searcinputwith5"  placeholder="Search Vehicle" style="width: 390px; height:35px;font-size: 13px; background-color: transparent; border: none; outline: none; font-family: deneme;  text-align: center; color: #FFFFFF; opacity: 0.8;">
+                    </div>
+                </div>
+           </div>
+
+           <div class="playerobjecttopname">Object List</div>
+
+           <div id="objectlistbeyaid" class="objectlistbeyaclass">
+
+                <div class="objectlistcard">
+                    <div class="objectlistcardimage">
+                        <img src="https://gtahash.ru/files/construction/prop_logpile_06b.jpg" alt="" class="imgdeger">
+                    </div>
+                    <div class="objectlistcardname">prop_logpile_06b</div>
+                    
+                </div>
+            </div>
+           
+       </div>
+
+
+
+          <!-- ------------------------------------------------------------------------- items settings -------------------------------------------------------------------------------- -->
+
+
+
+            <div class="itemlist" style="display: none;" >
+                <div class="firstinput" >
+                    <div class="iconandtextdiv">
+                        <div class="icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.65" d="M23 23L17.8057 17.7964M20.6842 10.8421C20.6842 13.4524 19.6473 15.9558 17.8015 17.8015C15.9558 19.6473 13.4524 20.6842 10.8421 20.6842C8.23182 20.6842 5.72844 19.6473 3.88269 17.8015C2.03693 15.9558 1 13.4524 1 10.8421C1 8.23182 2.03693 5.72844 3.88269 3.88269C5.72844 2.03693 8.23182 1 10.8421 1C13.4524 1 15.9558 2.03693 17.8015 3.88269C19.6473 5.72844 20.6842 8.23182 20.6842 10.8421Z" stroke="white" stroke-opacity="0.65" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                        </div>
+                        <div class="icontext" style="font-size: 15px;">
+                        <input type="text" id="searcinputwith5"  placeholder="Search Tickets" style="width: 390px; height:35px;font-size: 13px; background-color: transparent; border: none; outline: none; font-family: deneme;  text-align: center; color: #FFFFFF; opacity: 0.8;">
+                        </div>
+                    </div>
+               </div>
+
+               <div class="supporttopname">Support List</div>
+
+
+               <div id="supportlistbeyaid" class="supportinsertclass" >
+                    <div class="support-item">
+                        <div class="support-item-active">
+                                <img src="deneme.svg" alt="" style="width: 20px; margin-top:-16px;">
+                
+                            </div>
+
+                        <div class="support-item-playername">Hello, I have a questionasdasdassasdsadasdadas</div>
+                    </div>
+
+                    <div class="support-item">
+                                <div class="support-item-active">
+                                    <img src="deneme.svg" alt="" style="width: 20px; margin-top:-16px;">
+                    
+                                </div>
+
+                                <div class="support-item-playername">Hello, I have a questionasdasdassasdsadasdasdaas</div>
+                    </div>
+
+                    <div class="support-item">
+                                <div class="support-item-active">
+                                    <img src="deneme.svg" alt="" style="width: 20px; margin-top:-16px;">
+                    
+                                </div>
+
+                                <div class="support-item-playername">Hello, I have a questionasdasdassasdsadasdasads</div>
+
+                                <div class="supportticketbelirti">#Ticket-2567</div>
+                    </div>
+               </div>
+
+
+               <div id="supporttalkbeyaid"  style="display: none; flex-direction: column;">
+                        <div class="usermainchatpart">
+                            <div class="scroller2" id="style-6">
+            
+                                <div class="usermainchatcontainer" style="float: left;">
+                                    <div class="theavatar"> <img src="https://img.icons8.com/external-gradient-flat-deni-mao/600/000000/external-User-avatar-online-shopping-gradient-flat-deni-mao.png" class="theavatar_img" /></div>
+                                    <div class="userleftmessage"><p style="margin-left: 10px; margin-right: 10px; font-family: deneme2; font-size: 15px; line-height: 100%; ">Muhittin adi güzel </p></div>
+                                    <div class="userlefplayername">👷🏽 Paul Malon</div>
+                            
+                                </div>
+            
+            
+                             
+            
+            
+                                <div class="usermainchatcontainer" style="float: right;">
+                                
+                                    <div class="userrightmessage"><p style="margin-left: 10px; margin-right: 10px; font-family: deneme2; font-size: 15px; line-height: 100%;">Hey bitchasdasdsaasads </p></div>
+                                    <div class="theavatar"> <img src="https://png.pngtree.com/png-vector/20190704/ourlarge/pngtree-businessman-user-avatar-free-vector-png-image_1538405.jpg" class="theavatar_img" /></div>
+                            
+                                </div>
+            
+                              
+                            </div>
+                        </div>
+                    <div class="userchatmain" >
+                        <span style="width: 5%; height: 100%;background: #535353; ">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top: 12px; margin-left:20px; padding-left:5px;">
+                                <path d="M8.25 21.6L13.5 27L18.75 21.6H24C25.6545 21.6 27 20.389 27 18.9V2.7C27 1.21095 25.6545 0 24 0H3C1.3455 0 0 1.21095 0 2.7V18.9C0 20.389 1.3455 21.6 3 21.6H8.25ZM6 6.75H21V9.45H6V6.75ZM6 12.15H16.5V14.85H6V12.15Z" fill="white" fill-opacity="0.65"/>
+                            </svg>
+                                
+                        </span>
+                        <input id="userchatinput" type="text" style="width: 90%; height: 100%; outline: none; border: none;background: #535353; color: white; ">
+        
+                        <span style="width: 10%; height: 100%;background: #535353; ">
+                            <svg class="chatimagepart" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg"  style="margin-top: 12px; margin-left:30px; padding-left:5px;">
+                                <path d="M21.5 7.125C20.6328 7.12708 19.777 6.9281 18.9997 6.5437C18.2224 6.1593 17.5448 5.59993 17.0201 4.90953C16.4954 4.21913 16.1379 3.4165 15.9756 2.56465C15.8134 1.7128 15.8508 0.83494 16.085 0H2C1.60218 0 1.22064 0.158035 0.93934 0.43934C0.658035 0.720644 0.5 1.10218 0.5 1.5V19.5C0.5 19.8978 0.658035 20.2794 0.93934 20.5607C1.22064 20.842 1.60218 21 2 21H23C23.3978 21 23.7794 20.842 24.0607 20.5607C24.342 20.2794 24.5 19.8978 24.5 19.5V6.255C23.6029 6.82392 22.5623 7.12568 21.5 7.125ZM5.69 3C6.13501 3 6.57002 3.13196 6.94003 3.37919C7.31004 3.62643 7.59843 3.97783 7.76873 4.38896C7.93903 4.8001 7.98358 5.2525 7.89677 5.68895C7.80995 6.12541 7.59566 6.52632 7.28099 6.84099C6.96632 7.15566 6.56541 7.36995 6.12895 7.45677C5.6925 7.54358 5.2401 7.49903 4.82896 7.32873C4.41783 7.15843 4.06643 6.87004 3.81919 6.50003C3.57196 6.13002 3.44 5.69501 3.44 5.25C3.44 4.65326 3.67705 4.08097 4.09901 3.65901C4.52097 3.23705 5.09326 3 5.69 3ZM3.5 17.25V14.175L8 9.615C8.14052 9.47531 8.33061 9.39691 8.52875 9.39691C8.72689 9.39691 8.91698 9.47531 9.0575 9.615L11 11.5125L5.24 17.25H3.5ZM21.5 17.25H7.3625L12.035 12.5775L16.085 8.5275C16.2255 8.38781 16.4156 8.30941 16.6138 8.30941C16.8119 8.30941 17.002 8.38781 17.1425 8.5275L21.5 12.885V17.25Z" fill="white"/>
+                            </svg>
+                                
+                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg"  style="margin-top: 12px; margin-left:10px; padding-left:5px;">
+                                <path d="M21.5338 3.21438L14.8367 21.3044C14.4137 22.4474 13.1953 23.0346 12.1164 22.615C11.8493 22.5092 11.6069 22.3492 11.4046 22.1451C11.2023 21.9411 11.0444 21.6973 10.9408 21.4293L8.81795 16.063C8.41901 15.0329 7.62817 14.2028 6.61857 13.7545L1.50882 11.5259C0.445699 11.0613 -0.0380511 9.77313 0.426574 8.64813C0.536473 8.37648 0.69915 8.12933 0.905192 7.92097C1.11124 7.71261 1.35655 7.54718 1.62695 7.43425L18.8574 0.403002C19.9453 -0.041373 21.1524 0.516627 21.5518 1.65063C21.7284 2.15238 21.7217 2.70813 21.5349 3.21438H21.5338Z" fill="white"/>
+                            </svg>
+                                
+                        </span>
+                    </div>
+
+
+                    
+               </div>
+
+              
+                
+            </div>
+            
+
+
+           <!-- ---------------------------------------------------------------------------------------extra list------------------------------------------------------------------------------------------------------------------------------     -->
+
+               <div class="extralist" style="display: none;">
+                    <div class="extratopname">Extra Settings</div>
+
+
+                   <div class="extralist_itempart" style="opacity: 0.5;">
+                    <fieldset>
+                        <legend style="color: #878686; font-family: deneme; font-size: 16px;">🎁 GIVE ITEM</legend>
+                        <label for="itembeya" style="color: white; font-family: deneme; font-size: 12px;">ITEM</label>
+                        <input type="text" id="itembeya" style="border: none; outline: none;">
+                        <label for="itembeya2" style="color: white; font-family: deneme; font-size: 12px;">COUNT</label>
+                        <input type="number" id="itembeya2" style="border: none; outline: none;">
+                        <label for="itembeya3" style="color: white; font-family: deneme; font-size: 12px; margin-top: 10px;">PLAYER ID</label>
+
+                        <input type="number" id="itembeya3" style="border: none; outline: none;">
+
+                        <button style="width: 100%; margin-top: 10px; background-color: #4A7DFF; border: none; font-family: deneme; color: #080707;" id="giveitemid">GIVE</button>
+
+                      </fieldset>
+                   </div>
+
+
+
+                   <div class="extralist_weather" style="opacity: 0.5;">
+                    <fieldset>
+                        <legend style="color: #878686; font-family: deneme; font-size: 16px;">⛅ WEATHER SETTINGS</legend>
+                       <div class="thisweather">
+                            <div class="container" onclick="weatherclick('CLEAR')">
+                                <img src="weatherimage/CLEAR.jpg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                <div class="text">CLEAR</div>
+                                </div>
+                            </div>
+
+                            <div class="container" style="margin-left: 15px;" onclick="weatherclick('SUNNY')">
+                                <img src="weatherimage/SUNNY.jpg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                <div class="text">SUNNY</div>
+                                </div>
+                            </div>
+
+                            <div class="container" style="margin-left: 15px;" onclick="weatherclick('SMOUG')">
+                                <img src="weatherimage/SMOUG.jpg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                <div class="text">SMOUG</div>
+                                </div>
+                            </div>
+
+                            <div class="container" style="margin-left: 15px;" onclick="weatherclick('FOGGY')">
+                                <img src="weatherimage/FOGGY.jpg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                <div class="text">FOGGY</div>
+                                </div>
+                            </div>
+
+                            <div class="container" style="margin-left: 15px;" onclick="weatherclick('OVERCAST')">
+                                <img src="weatherimage/OVERCAST.jpg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                <div class="text">OVERCAST</div>
+                                </div>
+                            </div>
+
+                            <div class="container" style="margin-left: 15px;" onclick="weatherclick('CLOUDS')">
+                                <img src="weatherimage/CLOUDS.jpg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                <div class="text">CLOUDS</div>
+                                </div>
+                            </div>
+
+                            <div class="container" style="margin-left: 15px;" onclick="weatherclick('NEUTRAL')">
+                                <img src="weatherimage/NEUTRAL.jpg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                <div class="text">NEUTRAL</div>
+                                </div>
+                            </div>
+
+                            <div class="container" style="margin-left: 15px;" onclick="weatherclick('CLEARING')">
+                                <img src="weatherimage/CLEARING.jpg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                <div class="text">CLEARING</div>
+                                </div>
+                            </div>
+
+
+                            <div class="container" style="margin-left: 15px;" onclick="weatherclick('RAIN')">
+                                <img src="weatherimage/RAIN.jpg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                <div class="text">RAIN</div>
+                                </div>
+                            </div>
+
+
+                            <div class="container" style="margin-left: 15px;" onclick="weatherclick('THUNDER')">
+                                <img src="weatherimage/THUNDER.jpeg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                <div class="text">THUNDER</div>
+                                </div>
+                            </div>
+
+                            <div class="container" style="margin-left: 15px;" onclick="weatherclick('SNOW')">
+                                <img src="weatherimage/SNOW.jpg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                <div class="text">SNOW</div>
+                                </div>
+                            </div>
+
+                            <div class="container" style="margin-left: 15px;" onclick="weatherclick('SNOWLIGHT')">
+                                <img src="weatherimage/SNOWLIGHT.jpg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                <div class="text">SNOWLIGHT</div>
+                                </div>
+                            </div>
+
+                            <div class="container" style="margin-left: 15px;" onclick="weatherclick('BLIZZARD')">
+                                <img src="weatherimage/BLIZZARD.jpg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                <div class="text">BLIZZARD</div>
+                                </div>
+                            </div>
+
+                            <div class="container" style="margin-left: 15px;" onclick="weatherclick('XMAS')">
+                                <img src="weatherimage/XMAS.jpg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                <div class="text">XMAS</div>
+                                </div>
+                            </div>
+
+                            <div class="container" style="margin-left: 15px;" onclick="weatherclick('HALLOWEEN')">
+                                <img src="weatherimage/HALLOWEEN.jpeg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                <div class="text">HALLOWEEN</div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                      </fieldset>
+                   </div>
+
+
+
+                   <div class="extralist_others" style="opacity: 0.5;">
+                        <fieldset>
+                            <legend style="color: #878686; font-family: deneme; font-size: 16px;">⚙️ EXTRA SETTINGS</legend>
+                            <div style="display: inline-block; width: 100%;">
+                                <label for="itembeya4" style="color: white; font-family: deneme; font-size: 12px;margin-left: 10px;">MONEY</label>
+                                <input type="text" id="itembeya4" style="outline: none; border: none;">
+                                <label for="itembeya5" style="color: white; font-family: deneme; font-size: 12px; margin-left: 10px;">COUNT</label>
+                                <input type="number" id="itembeya5" style="outline: none; border: none;">
+                                <label for="itembeya6" style="color: white; font-family: deneme; font-size: 12px; margin-top: 10px; margin-left: 10px;">PLAYER ID</label>
+
+                                <input type="number" id="itembeya6" style="outline: none; border: none;">
+
+                                <button style="width: 20%;  background-color: #4A7DFF; border: none; font-family: deneme; color: #080707; margin-left: 30px; " id="givemoneyid">GIVE</button>
+                            </div>
+
+
+                    
+                        </fieldset>
+                   </div>
+
+
+                   <div class="extralist_others2" style="opacity: 0.5; ">
+                    <fieldset style="display: flex;">
+                        <legend style="color: #878686; font-family: deneme; font-size: 16px;">⚙️ EXTRA SETTINGS-2</legend>
+                        <div style="display: flex; width: 60%;">
+                            <!-- <div class="cntr" style="background-color: red;"> -->
+                                <label for="cbx" class="label-cbx">
+                                  <input id="cbx" type="checkbox" class="invisible">
+                                  <div class="checkbox">
+                                    <svg width="20px" height="20px" viewBox="0 0 20 20">
+                                      <path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>
+                                      <polyline points="4 11 8 15 16 6"></polyline>
+                                    </svg>
+                                  </div>
+                                  <span style="color: white; font-family: deneme; font-size: 14px;margin-left: 10px;">Developer Mode</span>
+                                </label>
+
+                                
+                             <!-- </div> -->
+                        </div>
+
+                       
+
+                        <div style="display: flex; width: 100%;">
+                            <button style="width: 40%;  background-color: #4A7DFF; border: none; font-family: deneme; color: #080707; margin-left: 30px; " id="updatedevelopermode">UPDATE</button>
+
+                        </div>
+
+                        <div style="display: inline-block; width: 100%;">
+                            <label for="announid" style="color: white; font-family: deneme; font-size: 12px;margin-left: 10px;">ANNOUNCE</label>
+                            <input type="text" id="announid" style="outline: none; border: none;">
+                        </div>
+
+                        <div style="display: flex; width: 50%;">
+                            <button style="width: 40%;  background-color: #4A7DFF; border: none; font-family: deneme; color: #080707; margin-left: 30px; cursor: pointer; " id="announcesend">SEND</button>
+
+                        </div>
+                
+                    </fieldset>
+                   </div>
+
+
+                   <!-- <div class="extralist_others3" style="opacity: 0.5; ">
+                    <fieldset style="display: flex;"><legend style="color: #878686; font-family: deneme; font-size: 16px;">⚙️ EXTRA SETTINGS-3</legend></fieldset>
+                   </div> -->
+               </div>
+
+
+
+           <!-- ---------------------------------------------------------------------------------------log  list------------------------------------------------------------------------------------------------------------------------------     -->
+
+           <div class="loglist" style="display: none;">
+                <div class="loglisttopname">Log List</div>
+
+
+                <div id="loglistbeyaid" class="adminlogpartcss">
+                    <div class="log-item">
+                        <div class="log-item-active">
+                                <img src="info.svg" alt="" style="width: 20px; margin-top:-16px;">
+                
+                            </div>
+
+                            <div class="log-item-playername">STATE : VEHICLE IS REMOVED</div>
+                    </div>
+
+                    <div class="log-item">
+                                <div class="log-item-active">
+                                    <img src="info.svg" alt="" style="width: 20px; margin-top:-16px;">
+                    
+                                </div>
+
+                                <div class="log-item-playername">Hello, I have a questionasdasdassasdsadasdasdaas</div>
+                    </div>
+
+                    <div class="log-item">
+                                <div class="log-item-active">
+                                    <img src="info.svg" alt="" style="width: 20px; margin-top:-16px;">
+                    
+                                </div>
+
+                                <div class="log-item-playername">Hello, I have a questionasdasdassasdsadasdasads</div>
+                    </div>
+              </div>
+           </div>
+
+             
+
+        <!-- ------------------------------------------------------------------------- s -------------------------------------------------------------------------------- -->
+            <div class="rightmenu" >
+
+                <div class="adminrightline">
+                    <div class="adminrightlineicon">///</div>
+                    <div class="adminrightlineicon2">///</div>
+
+                </div>
+
+                <!-- -------------------------- player-list-right ------------------------------------------  -->
+                <div class="rightmenu-item"  id="playerrightlist" style="display: none;">
+                    <div class="rightmenu-item-top">Player List</div>
+                    <div class="rightmenu-item-bottom">
+                        <svg version="1.1" style="width: 30px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path style="fill: #FFFFFF;" d="M256,0c-65.733,0-119.211,53.479-119.211,119.211S190.267,238.423,256,238.423s119.211-53.479,119.211-119.211 S321.733,0,256,0z M256,218.024c-54.486,0-98.813-44.328-98.813-98.813S201.515,20.398,256,20.398s98.813,44.328,98.813,98.813 S310.485,218.024,256,218.024z"/> </g> </g> <g> <g> <path style="fill: #FFFFFF;" d="M426.272,331.529c-45.48-45.48-105.952-70.529-170.272-70.529c-64.32,0-124.791,25.047-170.273,70.529 c-45.48,45.48-70.529,105.952-70.529,170.272c0,5.632,4.566,10.199,10.199,10.199h461.204c5.632,0,10.199-4.567,10.199-10.199 C496.801,437.482,471.752,377.01,426.272,331.529z M35.831,491.602C41.179,374.789,137.889,281.398,256,281.398 s214.821,93.391,220.17,210.204H35.831z"/> </g> </g> <g> <g> <path style="fill: #FFFFFF;" d="M182.644,457.944H66.295c-5.633,0-10.199,4.567-10.199,10.199s4.566,10.199,10.199,10.199h116.349 c5.633,0,10.199-4.567,10.199-10.199S188.277,457.944,182.644,457.944z"/> </g> </g> <g> <g> <path style="fill: #FFFFFF;" d="M225.621,457.944h-7.337c-5.633,0-10.199,4.567-10.199,10.199s4.566,10.199,10.199,10.199h7.337 c5.633,0,10.199-4.567,10.199-10.199S231.254,457.944,225.621,457.944z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+                    </div>
+                </div>
+                <div class="rightmenu-item"  id="playerrightbanlist" style="display: none;">
+                    <div class="rightmenu-item-top">Player Ban List</div>
+                    <div class="rightmenu-item-bottom" style="margin-top:-15px;">
+                        <svg version="1.1" style="width: 30px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"> <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M53.919,10.08c12.108,12.106,12.108,31.733,0,43.84 c-12.105,12.107-31.732,12.107-43.838,0c-12.108-12.106-12.108-31.733,0-43.84C22.187-2.027,41.813-2.027,53.919,10.08z"/> <line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="10.08" y1="10.08" x2="53.92" y2="53.92"/> </svg>
+                    </div>
+                </div>
+    
+                <!-- -------------------------- vehicle-list-right ------------------------------------------  -->
+    
+                <div class="rightmenu-item" style="display: none;" id="vehiclelistright">
+                    <div class="rightmenu-item-top">Vehicle List</div>
+                    <div class="rightmenu-item-bottom" style="margin-top:-15px;">
+                        <svg version="1.1" style="width: 30px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 381.592 381.592" style="enable-background:new 0 0 381.592 381.592;" xml:space="preserve"> <g> <path style="fill: #FFFFFF;" d="M325.707,55.884c-36.035-36.036-83.949-55.883-134.91-55.883c-50.965,0-98.877,19.847-134.914,55.883 C19.848,91.921,0,139.833,0,190.796s19.848,98.876,55.883,134.913c36.037,36.035,83.949,55.882,134.914,55.882 c50.961,0,98.875-19.847,134.91-55.882c36.037-36.036,55.885-83.95,55.885-134.913S361.744,91.921,325.707,55.884z M317.91,135.754 c1.975,0.805,3.526,2.388,4.297,4.375c2.178,5.634,4.008,11.463,5.438,17.328c0.5,2.043,0.146,4.203-0.981,5.979 c-1.125,1.777-2.926,3.02-4.986,3.442l-74.967,15.349c-0.523,0.106-1.045,0.158-1.562,0.158c-3.29,0-6.305-2.109-7.358-5.352 c-1.218-3.748,0.573-7.813,4.162-9.443l69.83-31.718C313.723,134.991,315.939,134.949,317.91,135.754z M235.756,118.963 l5.492-48.738c0.281-2.5,1.762-4.708,3.965-5.919c2.207-1.212,4.863-1.276,7.123-0.174c15.441,7.527,29.254,17.712,41.059,30.271 c1.711,1.82,2.439,4.353,1.955,6.803c-0.483,2.452-2.119,4.518-4.395,5.551l-44.301,20.123c-1.023,0.465-2.117,0.693-3.203,0.693 c-1.609,0-3.205-0.501-4.551-1.479C236.645,124.456,235.443,121.732,235.756,118.963z M176.16,53.011 c1.359-1.624,3.324-2.62,5.436-2.758c6.113-0.4,12.287-0.4,18.4,0c2.111,0.138,4.076,1.134,5.436,2.758 c1.357,1.624,1.992,3.732,1.754,5.836l-8.695,77.167c-0.44,3.917-3.752,6.877-7.692,6.877c-3.943,0-7.254-2.96-7.695-6.877 l-8.697-77.167C174.168,56.744,174.803,54.635,176.16,53.011z M190.797,167.474c12.879,0,23.322,10.442,23.322,23.322 s-10.443,23.322-23.322,23.322c-12.881,0-23.322-10.442-23.322-23.322S177.916,167.474,190.797,167.474z M88.195,94.401 C100,81.842,113.814,71.657,129.256,64.13c2.258-1.103,4.918-1.038,7.121,0.175c2.205,1.212,3.686,3.418,3.967,5.918l5.49,48.739 c0.313,2.769-0.887,5.493-3.141,7.131c-1.348,0.978-2.945,1.479-4.555,1.479c-1.086,0-2.178-0.229-3.201-0.693l-44.303-20.123 c-2.273-1.034-3.91-3.1-4.395-5.551C85.758,98.755,86.484,96.221,88.195,94.401z M53.945,157.457 c1.43-5.863,3.26-11.693,5.441-17.329c0.768-1.987,2.322-3.569,4.295-4.375c1.971-0.805,4.188-0.763,6.129,0.12l69.824,31.716 c3.588,1.63,5.381,5.695,4.162,9.443c-1.053,3.241-4.066,5.352-7.359,5.352c-0.516,0-1.037-0.051-1.559-0.158l-74.963-15.348 c-2.061-0.422-3.861-1.664-4.988-3.441C53.803,161.66,53.447,159.502,53.945,157.457z M73.998,262.299 c-0.307,0-0.615-0.019-0.926-0.055c-2.48-0.298-4.664-1.777-5.867-3.97c-7.967-14.554-13.252-30.248-15.703-46.651 c-0.375-2.5,0.496-5.025,2.33-6.765c1.836-1.739,4.408-2.475,6.881-1.967l46.438,9.508c2.73,0.559,4.951,2.541,5.811,5.192 c0.861,2.651,0.232,5.562-1.648,7.617l-31.598,34.569C78.238,261.396,76.158,262.299,73.998,262.299z M122.166,311.134 c-0.625,0.157-1.262,0.235-1.895,0.235c-1.443,0-2.873-0.404-4.117-1.185c-4.988-3.132-9.834-6.615-14.402-10.354 c-1.646-1.348-2.666-3.312-2.818-5.434c-0.154-2.123,0.572-4.213,2.006-5.785l50.543-55.295c2.66-2.907,7.08-3.356,10.268-1.039 c3.189,2.315,4.129,6.658,2.184,10.086l-36.928,65.08C125.963,309.285,124.215,310.616,122.166,311.134z M220.527,325.256 c-1.078,2.278-3.197,3.892-5.683,4.319c-7.889,1.367-15.979,2.059-24.051,2.059s-16.162-0.691-24.051-2.059 c-2.482-0.43-4.602-2.041-5.68-4.319c-1.076-2.278-0.979-4.938,0.266-7.132l22.73-40.061c1.375-2.424,3.947-3.922,6.736-3.922 c2.787,0,5.357,1.498,6.734,3.922l22.729,40.061C221.506,320.317,221.604,322.978,220.527,325.256z M282.658,294.399 c-0.154,2.121-1.175,4.086-2.82,5.434c-4.57,3.74-9.416,7.222-14.402,10.352c-1.243,0.781-2.674,1.187-4.114,1.187 c-0.636,0-1.271-0.078-1.896-0.236c-2.049-0.516-3.799-1.849-4.842-3.687l-36.926-65.08c-1.945-3.428-1.006-7.771,2.184-10.086 c3.189-2.318,7.607-1.868,10.268,1.039l50.542,55.295C282.086,290.187,282.812,292.276,282.658,294.399z M314.385,258.274 c-1.199,2.193-3.385,3.672-5.867,3.971c-0.309,0.037-0.616,0.055-0.926,0.055c-2.16,0-4.238-0.904-5.715-2.52l-31.598-34.569 c-1.882-2.058-2.513-4.968-1.65-7.618c0.861-2.65,3.082-4.634,5.813-5.193l46.436-9.506c2.479-0.508,5.045,0.228,6.881,1.967 c1.836,1.738,2.707,4.264,2.332,6.765C327.637,228.026,322.354,243.722,314.385,258.274z"/> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+                      
+                    </div>
+                </div>
+    
+                 <!-- -------------------------- object-list-right ------------------------------------------  -->
+    
+                 <div class="rightmenu-item" style="display: none;" id="objectlistright">
+                    <div class="rightmenu-item-top">Object List</div>
+                    <div class="rightmenu-item-bottom" style="margin-top:0px;">
+                        <svg style="width: 30px;" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"> <path style="fill: #FFFFFF;" d="M400,168H328V112h32V16H264V48H112V16H16v96H48V264H16v96h96V328h72v72H152v96h96V464H400v32h96V400H464V232h32V136H400ZM296,48h32V80H296Zm32,248v32H296V296ZM48,48H80V80H48ZM80,328H48V296H80Zm32-32V264H80V112h32V80H264v32h32V264H264v32ZM216,464H184V432h32Zm248,0H432V432h32ZM432,168h32v32H432Zm0,232H400v32H248V400H216V328h48v32h96V264H328V200h72v32h32Z" class="ci-primary"/> </svg>
+                       
+                      
+                    </div>
+                </div>
+    
+    
+                <!-- -------------------------- item-list-right ------------------------------------------  -->
+    
+                <div class="rightmenu-item" style="display: none;" id="supportlistright">
+                    <div class="rightmenu-item-top">Support</div>
+                    <div class="rightmenu-item-bottom" style="margin-top:0px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="width: 30px;" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"> <g> <path style="fill: #FFFFFF;" d="M39,32h22c1.1,0,2-0.9,2-2v-4c0-3.3-2.7-6-6-6H43c-3.3,0-6,2.7-6,6v4C37,31.1,37.9,32,39,32z"/> </g> <path style="fill: #FFFFFF;" d="M72,25h-2c-0.6,0-1,0.4-1,1v4c0,4.4-3.6,8-8,8H39c-4.4,0-8-3.6-8-8v-4c0-0.6-0.4-1-1-1h-2c-3.3,0-6,2.7-6,6 v43c0,3.3,2.7,6,6,6h44c3.3,0,6-2.7,6-6V31C78,27.7,75.3,25,72,25z M66.8,49L47.6,68.2c-0.5,0.5-1.1,0.8-1.8,0.8 c-0.7,0-1.4-0.3-1.9-0.8L33.2,57.5c-0.5-0.5-0.5-1.1,0-1.6l2.1-2.1c0.5-0.5,1.1-0.5,1.6,0l8.8,8.8l17.3-17.3c0.5-0.5,1.1-0.5,1.6,0 l2.1,2.1C67.2,47.9,67.2,48.6,66.8,49z"/> </svg>
+                        
+                       
+                      
+                    </div>
+                </div>
+                
+                
+                <!-- -------------------------- extra-list-right ------------------------------------------  -->
+    
+                 <div class="rightmenu-item"  style="display: none;" id = "extralistright">
+                    <div class="rightmenu-item-top">Extra</div>
+                    <div class="rightmenu-item-bottom" style="margin-top:0px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="width: 30px;" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"> <g> <path style="fill: #FFFFFF;" d="M39,32h22c1.1,0,2-0.9,2-2v-4c0-3.3-2.7-6-6-6H43c-3.3,0-6,2.7-6,6v4C37,31.1,37.9,32,39,32z"/> </g> <path style="fill: #FFFFFF;" d="M72,25h-2c-0.6,0-1,0.4-1,1v4c0,4.4-3.6,8-8,8H39c-4.4,0-8-3.6-8-8v-4c0-0.6-0.4-1-1-1h-2c-3.3,0-6,2.7-6,6 v43c0,3.3,2.7,6,6,6h44c3.3,0,6-2.7,6-6V31C78,27.7,75.3,25,72,25z M66.8,49L47.6,68.2c-0.5,0.5-1.1,0.8-1.8,0.8 c-0.7,0-1.4-0.3-1.9-0.8L33.2,57.5c-0.5-0.5-0.5-1.1,0-1.6l2.1-2.1c0.5-0.5,1.1-0.5,1.6,0l8.8,8.8l17.3-17.3c0.5-0.5,1.1-0.5,1.6,0 l2.1,2.1C67.2,47.9,67.2,48.6,66.8,49z"/> </svg>
+                        
+                       
+                      
+                    </div>
+                </div>
+
+                  <!-- -------------------------- log-list-right ------------------------------------------  -->
+    
+                  <div class="rightmenu-item" style="display: none;" id = "loglistright">
+                    <div class="rightmenu-item-top">Logs</div>
+                    <div class="rightmenu-item-bottom" style="margin-top:0px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="width: 30px;" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"> <g> <path style="fill: #FFFFFF;" d="M39,32h22c1.1,0,2-0.9,2-2v-4c0-3.3-2.7-6-6-6H43c-3.3,0-6,2.7-6,6v4C37,31.1,37.9,32,39,32z"/> </g> <path style="fill: #FFFFFF;" d="M72,25h-2c-0.6,0-1,0.4-1,1v4c0,4.4-3.6,8-8,8H39c-4.4,0-8-3.6-8-8v-4c0-0.6-0.4-1-1-1h-2c-3.3,0-6,2.7-6,6 v43c0,3.3,2.7,6,6,6h44c3.3,0,6-2.7,6-6V31C78,27.7,75.3,25,72,25z M66.8,49L47.6,68.2c-0.5,0.5-1.1,0.8-1.8,0.8 c-0.7,0-1.4-0.3-1.9-0.8L33.2,57.5c-0.5-0.5-0.5-1.1,0-1.6l2.1-2.1c0.5-0.5,1.1-0.5,1.6,0l8.8,8.8l17.3-17.3c0.5-0.5,1.1-0.5,1.6,0 l2.1,2.1C67.2,47.9,67.2,48.6,66.8,49z"/> </svg>
+                        
+                       
+                      
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+     <!-- --------------------------------------------------- ticket for players ---------------------------------------------------------------------- -->
+
+
+       <div class="playerticketmain" style="display: none;">
+            <div class="playerticketmaintoptext">TICKETS</div>
+            <div class="ticketleftline">
+                <div class="ticketleftlineicon">///</div>
+                <div class="ticketleftlineicon2">///</div>
+    
+            </div>
+
+            <div class="ticketrightline">
+                <div class="ticketrightlineicon">///</div>
+                <div class="ticketrightlineicon2">///</div>
+
+            </div>
+
+            <div class="playerticketrightadd" style="display: flex;">
+                <img src="add.svg" alt="" style="width: 20px; margin-left: 20px;"><div style="margin: 10px;">ADD TICKET</div> 
+            </div>
+            <div class="playerticketlist" style="display: none;">
+                <div class="playerticketlistitem">
+                    <div class="tickettopnameplayer">#TICKET-0124</div>
+                    <div class="ticketcenterticket">There is some bug in motel please help</div>
+                    <div class="tickettimeplayer">10/07/1991</div>
+                </div>
+            </div>
+
+            <div class="playerticketmessagepart" style="display: none;">
+
+                <div class="playerticketmainchatpart">
+                    <div class="playerticketmainchatpart">
+                        <div class="playeticketscroller2" id="style-7">
+        
+                            <div class="playeticketmainchatcontainer" style="float: left;">
+                                <div class="playetickettheavatar"> <img src="https://img.icons8.com/external-gradient-flat-deni-mao/600/000000/external-User-avatar-online-shopping-gradient-flat-deni-mao.png" class="playetickettheavatar_img" /></div>
+                                <div class="playeticketleftmessage"><p style="margin-left: 10px; margin-right: 10px; font-family: deneme2; font-size: 15px; line-height: 100%; ">Muhittin adi güzel </p></div>
+                            
+                        
+                            </div>
+        
+        
+                         
+        
+        
+                            <div class="playeticketmainchatcontainer" style="float: right;">
+                            
+                                <div class="playeticketrightmessage"><p style="margin-left: 10px; margin-right: 10px; font-family: deneme2; font-size: 15px; line-height: 100%;">Hey bitchasdasdsaasads </p></div>
+                                <div class="playetickettheavatar"> <img src="https://png.pngtree.com/png-vector/20190704/ourlarge/pngtree-businessman-user-avatar-free-vector-png-image_1538405.jpg" class="playetickettheavatar_img" /></div>
+                        
+                            </div>
+        
+                          
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="playerticketchatmain">
+                    <span style="width: 5%; height: 100%;background: #535353; ">
+                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top: 12px; margin-left:20px; padding-left:5px;">
+                            <path d="M8.25 21.6L13.5 27L18.75 21.6H24C25.6545 21.6 27 20.389 27 18.9V2.7C27 1.21095 25.6545 0 24 0H3C1.3455 0 0 1.21095 0 2.7V18.9C0 20.389 1.3455 21.6 3 21.6H8.25ZM6 6.75H21V9.45H6V6.75ZM6 12.15H16.5V14.85H6V12.15Z" fill="white" fill-opacity="0.65"/>
+                        </svg>
+                            
+                    </span>
+                    <input id="userchatinputplayer" type="text" style="width: 90%; height: 100%; outline: none; border: none;background: #535353; color: white; ">
+                    <span style="width: 10%; height: 100%;background: #535353; ">
+                        <svg class="chatimagepart" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg"  style="margin-top: 12px; margin-left:30px; padding-left:5px;">
+                            <path d="M21.5 7.125C20.6328 7.12708 19.777 6.9281 18.9997 6.5437C18.2224 6.1593 17.5448 5.59993 17.0201 4.90953C16.4954 4.21913 16.1379 3.4165 15.9756 2.56465C15.8134 1.7128 15.8508 0.83494 16.085 0H2C1.60218 0 1.22064 0.158035 0.93934 0.43934C0.658035 0.720644 0.5 1.10218 0.5 1.5V19.5C0.5 19.8978 0.658035 20.2794 0.93934 20.5607C1.22064 20.842 1.60218 21 2 21H23C23.3978 21 23.7794 20.842 24.0607 20.5607C24.342 20.2794 24.5 19.8978 24.5 19.5V6.255C23.6029 6.82392 22.5623 7.12568 21.5 7.125ZM5.69 3C6.13501 3 6.57002 3.13196 6.94003 3.37919C7.31004 3.62643 7.59843 3.97783 7.76873 4.38896C7.93903 4.8001 7.98358 5.2525 7.89677 5.68895C7.80995 6.12541 7.59566 6.52632 7.28099 6.84099C6.96632 7.15566 6.56541 7.36995 6.12895 7.45677C5.6925 7.54358 5.2401 7.49903 4.82896 7.32873C4.41783 7.15843 4.06643 6.87004 3.81919 6.50003C3.57196 6.13002 3.44 5.69501 3.44 5.25C3.44 4.65326 3.67705 4.08097 4.09901 3.65901C4.52097 3.23705 5.09326 3 5.69 3ZM3.5 17.25V14.175L8 9.615C8.14052 9.47531 8.33061 9.39691 8.52875 9.39691C8.72689 9.39691 8.91698 9.47531 9.0575 9.615L11 11.5125L5.24 17.25H3.5ZM21.5 17.25H7.3625L12.035 12.5775L16.085 8.5275C16.2255 8.38781 16.4156 8.30941 16.6138 8.30941C16.8119 8.30941 17.002 8.38781 17.1425 8.5275L21.5 12.885V17.25Z" fill="white"/>
+                        </svg>
+                            
+                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg"  style="margin-top: 12px; margin-left:10px; padding-left:5px;">
+                            <path d="M21.5338 3.21438L14.8367 21.3044C14.4137 22.4474 13.1953 23.0346 12.1164 22.615C11.8493 22.5092 11.6069 22.3492 11.4046 22.1451C11.2023 21.9411 11.0444 21.6973 10.9408 21.4293L8.81795 16.063C8.41901 15.0329 7.62817 14.2028 6.61857 13.7545L1.50882 11.5259C0.445699 11.0613 -0.0380511 9.77313 0.426574 8.64813C0.536473 8.37648 0.69915 8.12933 0.905192 7.92097C1.11124 7.71261 1.35655 7.54718 1.62695 7.43425L18.8574 0.403002C19.9453 -0.041373 21.1524 0.516627 21.5518 1.65063C21.7284 2.15238 21.7217 2.70813 21.5349 3.21438H21.5338Z" fill="white"/>
+                        </svg>
+                            
+                    </span>
+                </div>
+            </div>
+       </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+<script src="app.js"></script>
+
+</html>

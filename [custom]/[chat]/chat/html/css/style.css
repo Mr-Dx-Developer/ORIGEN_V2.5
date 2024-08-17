@@ -1,0 +1,235 @@
+/*@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');*/
+.color-0 {
+  color: #ffffff;
+}
+.color-1 {
+  color: #ff4444;
+}
+.color-2 {
+  color: #99cc00;
+}
+.color-3 {
+  color: #ffbb33;
+}
+.color-4 {
+  color: #0099cc;
+}
+.color-5 {
+  color: #33b5e5;
+}
+.color-6 {
+  color: #aa66cc;
+}
+.color-8 {
+  color: #cc0000;
+}
+.color-9 {
+  color: #cc0068;
+}
+/*src: url("../BarlowCondensed.ttf");*/
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  animation: fadeInAnimation2 ease 0.5s
+
+}
+
+.no-grow {
+  flex-grow: 0;
+  animation: fadeInAnimation2 ease 0.5s
+ 
+}
+
+em {
+  font-style: normal;
+}
+
+#app {
+  color: white;
+}
+
+.chat-window {
+  position: absolute;
+  top: 1.5%;
+  left: 0.8%;
+  width: 38%;
+  height: 30%;
+
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+      transform: translateX(-60px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes fadeInAnimation2 {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+.chat-messages {
+  position: relative;
+  height: 95%;
+  font-size: 1.1vh;
+  margin: 1%;
+  
+  /* flex: 1;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-content: flex-start; */
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+    animation: fadeInAnimation2 ease 0.5s;
+
+  
+}
+
+.chat-input {
+  font-size: 1.2vh;
+  position: absolute;
+  top: 31%;
+  left: 0.8%;
+  width: 25vw;
+  max-width: 1000px;
+  box-sizing: border-box;
+  background-color: rgba(44, 62, 80, 0.5);
+  border: 1px solid rgba(255,255,255, 0.15);
+  border-radius: 4px;
+}
+
+.prefix {
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+  font-size: 1.2vh;
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  vertical-align: middle;
+  line-height: calc(1vh + 1vh + 1.25vh);
+  padding-left: 0.5vh;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+}
+
+textarea {
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+  font-size: 1.1rem;
+  display: block;
+  box-sizing: border-box;
+  padding: 2px;
+  padding-left: 0.5vh;
+  color: white;
+  background-color: transparent;
+  width: 100%;
+  text-overflow: ellipsis;
+  border-width: 0;
+  height: 28px;
+  overflow: hidden;
+  animation: fadeInAnimation2 ease 0.5s
+
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.msg {
+  margin-bottom: 5px;
+}
+
+.suggestions {
+  list-style-type: none;
+  padding: 0.5%;
+  padding-left: 1.4%;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  color: rgba(255,255,255,0.8);
+  background-color: rgba(73, 100, 128, 0.25);
+  width: 100%;
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+  border-radius: 4px;
+  animation: fadeInAnimation2 ease 0.5s
+
+}
+
+.help {
+  color: #b0bbbd;
+  animation: fadeInAnimation2 ease 0.5s
+
+}
+
+.disabled {
+  color: #b0bbbd;
+  animation: fadeInAnimation2 ease 0.5s
+
+}
+
+.suggestion {
+  margin-bottom: 5px;
+  animation: fadeInAnimation2 ease 0.5s
+
+}
+
+.chat-message {
+  display: inline-block !important;
+  padding: 0.6vw;
+  padding-top: 0.6vw;
+  padding-bottom: 0.7vw;
+  margin: 0.1vw;
+  margin-left: 0.4vw;
+  border-radius: 10px;
+  background-color: rgba(52, 58, 235, 0.75);
+  width: fit-content;
+  max-width: 100%;
+  overflow: hidden;
+  word-break: break-word;
+  /* border-bottom: 4px solid rgba(0, 0, 0, 0.671);
+  border-right: 4px solid rgba(0, 0, 0, 0.603); */
+  box-shadow: 2.5px 2.5px #000000a1;
+  animation: fadeInAnimation ease 0.5s
+
+}
+
+.chat-message-body {
+  margin-top: 10px;
+}
+
+.chat-message.advert {
+  background-color: rgba(47, 92, 115, 0.75);
+}
+
+.chat-message.server {
+  background-color: rgba(190, 97, 18, 0.85);
+}
+
+.chat-message.system {
+  background-color: rgba(67, 57, 111, 0.75);
+}
+
+.chat-message.emergency {
+  background-color: rgba(163, 62, 48, 0.85);
+}
+
+.chat-message.nonemergency {
+  background-color: rgba(240, 182, 75, 0.75);
+}
+
+.chat-message.success {
+  background-color: rgba(88, 139, 90, 0.85);
+}

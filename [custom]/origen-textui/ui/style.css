@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+}
+
+.text-container {
+    display: none;
+    position: absolute;
+    width: 12.0417vw;
+    height: 2.7vw;
+    top: 70%;
+    left: 30%;
+}
+
+.press {
+    position: relative;
+    width: 2vw;
+    height: 2vw;
+    border-radius: .1823vw;
+    border: .15vw solid rgba(4, 191, 158, 0.30);
+    background: rgba(3, 60, 56, 0.55);
+    box-shadow: 0vw .0521vw .5625vw 0vw rgba(10, 116, 103, 0.35);
+    top: .5vw;
+    left: .5vw;
+}
+
+.press .text {
+    position: relative;
+    top: .3vw;
+    left: .56vw;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.press .press2 {
+    width: 1.05vw;
+    height: .1563vw;
+    border-radius: .2083vw;
+    background: #04BF9E;
+    box-shadow: 0vw 0vw .1406vw 0vw #35C2BA;
+    margin-top: .5vw;
+    margin-left: .35vw;
+}
+
+.index {
+    width: 9vw;
+    height: 1.4vw;
+    border-radius: .1823vw;
+    background: linear-gradient(180deg, rgba(9, 34, 30, 0.3) 10%, rgba(1, 89, 74, 0.35) 100%);
+    box-shadow: 0vw .01vw .1vw 0vw rgba(12, 63, 60, 0.05);
+    margin-top: -1.2vw;
+    margin-left: 3vw;
+}
+
+.index .text {
+    position: relative;
+    top: .15vw;
+    left: .25vw;
+    color: #FFF;
+    font-family: Inter;
+    font-size: .9375vw;
+    font-weight: 400;
+    text-overflow: ellipsis;
+}
+
+.circle img {
+    display: none;
+    top: 25vw;
+    left: 50vw;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.text-container2 {
+    display: none;
+    position: absolute;
+    width: 12.0417vw;
+    height: 2.7vw;
+    top: 51.5%;
+    left: 2%;
+}
+
+.press2 {
+    position: relative;
+    width: 2vw;
+    height: 2vw;
+    border-radius: .1823vw;
+    border: .15vw solid rgba(4, 191, 158, 0.30);
+    background: rgba(3, 60, 56, 0.55);
+    box-shadow: 0vw .0521vw .5625vw 0vw rgba(10, 116, 103, 0.35);
+    top: .5vw;
+    left: .5vw;
+    transition: box-shadow .3s;
+}
+
+.press2 .text2 {
+    position: relative;
+    top: .3vw;
+    left: .56vw;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.press2 .press22 {
+    width: 1.05vw;
+    height: .1563vw;
+    border-radius: .2083vw;
+    background: #04BF9E;
+    box-shadow: 0vw 0vw .1406vw 0vw #35C2BA;
+    margin-top: .5vw;
+    margin-left: .35vw;
+}
+
+.index2 {
+    width: 9vw;
+    height: 1.4vw;
+    border-radius: .1823vw;
+    background: linear-gradient(180deg, rgba(9, 34, 30, 0.3) 10%, rgba(1, 89, 74, 0.35) 100%);
+    box-shadow: 0vw .01vw .1vw 0vw rgba(12, 63, 60, 0.05);
+    margin-top: -1.2vw;
+    margin-left: 3vw;
+    transition: box-shadow .3s;
+}
+
+.index2 .text2 {
+    position: relative;
+    top: .20vw;
+    left: .25vw;
+    color: #FFF;
+    font-family: Inter;
+    font-size: .8vw;
+    font-weight: 400;
+    text-overflow: ellipsis;
+}

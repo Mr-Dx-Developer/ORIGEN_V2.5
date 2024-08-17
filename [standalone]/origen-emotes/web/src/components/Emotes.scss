@@ -1,0 +1,22 @@
+.container {
+    width: 30vh;
+    height: 20.5vh;
+    background: url(../assets/emoteContainer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+    color: #FFFFFF;
+}
+
+.container:hover {
+    width: 30vh;
+    height: 20.5vh;
+    background: url(../assets/emoteContainer_hover.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: #2D3342;
+}

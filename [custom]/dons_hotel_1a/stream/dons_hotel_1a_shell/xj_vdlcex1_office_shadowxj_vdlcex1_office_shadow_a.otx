@@ -1,0 +1,10 @@
+Version 13 30
+{
+	Image xj_vdlcex1_office_shadowxj_vdlcex1_office_shadow_a.dds
+	Type Regular
+	PixelFormat DXT5
+	Levels 6
+	Usage DIFFUSE
+	UsageFlags -
+	ExtraFlags 0
+}

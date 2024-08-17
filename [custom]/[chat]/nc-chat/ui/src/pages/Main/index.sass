@@ -1,0 +1,59 @@
+#emoji-menu
+    z-index: 9999
+
+    &::-webkit-scrollbar-thumb
+        background-color: rgba(255,255,255,0.8)
+        border-radius: 64px
+
+@keyframes fadeOutX
+    0%
+        opacity: 1
+        transform: translateX(0)
+
+    100%
+        opacity: 0
+        transform: translateX(-2rem)
+
+.message-box
+    width: 100%
+    overflow-y: auto
+    overflow-x: hidden
+    display: flex
+    flex-direction: column
+    height: 320px
+    &.closing
+        animation: fadeOutX 0.3s ease-in-out forwards
+
+    & > div.col
+        display: flex
+        flex-direction: column
+        gap: 8px
+        padding-right: 4px
+        width: 100%
+
+.chat-input-part
+    &.closing
+        animation: fadeOutX 0.3s ease-in-out forwards
+
+.background-settings
+    background: linear-gradient(180deg,rgba(20, 20, 20, 0.82) 0%, rgba(11, 11, 11, 0.82) 100%)
+
+#checkboxInput:checked + .toggleSwitch::after
+    transform: translateX(120%)
+    background-color: white
+#notifInput:checked + .toggleSwitch::after
+    transform: translateX(120%)
+    background-color: white
+
+.toggleSwitch:hover::after
+    background-color: white
+
+.toggleSwitch::after
+    content: ""
+    position: absolute
+    height: 16px
+    width: 16px
+    left: 3px
+    transition: transform 0.2s
+    box-shadow: 5px 2px 7px rgba(8, 8, 8, 0.26)
+    background: rgba(255, 255, 255, 0.22)

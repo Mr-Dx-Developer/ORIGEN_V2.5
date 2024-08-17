@@ -1,0 +1,79 @@
+## You CAN edit the following:
+endpoint_add_tcp "0.0.0.0:30120"
+endpoint_add_udp "0.0.0.0:30120"
+sv_maxclients 7
+set steam_webApiKey "38CE73DB2E8867807E996C90F4F0EE65"
+sets tags "default, deployer, qbcore, qb-core"
+
+## You MAY edit the following:
+sv_licenseKey "cfxk_1ZllrFJuJ9NuT4SZ28yJn_1zAThZ"
+sets sv_hostname "^6NOMERCY ROLEPLAY "
+sets sv_projectName "^6NOMERCY ROLEPLAY "
+sets sv_projectDesc "DUNIA BARU, RINGAN, EVENT MENARIK"
+sets locale "id-ID"
+load_server_icon logo.png
+set sv_enforceGameBuild 2944
+set mysql_connection_string "mysql://root@localhost/origenv1qb?charset=utf8mb4"
+
+# Voice config
+setr voice_useNativeAudio true
+setr voice_useSendingRangeOnly true
+setr voice_defaultCycle "GRAVE"
+setr voice_defaultVolume 0.3
+setr voice_enableRadioAnim 1
+setr voice_syncData 1
+
+# QBCore locale config
+setr qb_locale "en"
+setr UseTarget true
+
+setr inventory:framework "qb"
+
+# QBCore UseTarget
+setr UseTarget true
+
+# These resources will start by default.
+ensure mapmanager
+ensure chat
+ensure spawnmanager
+ensure sessionmanager
+ensure basic-gamemode
+ensure hardcap
+ensure baseevents
+
+# QBCore & Extra stuff
+ensure qb-core
+ensure ox_lib
+ensure jim_bridge
+ensure [qb]
+ensure [standalone]
+ensure [custom]
+ensure [new]
+ensure [voice]
+ensure [jobs]
+ensure [assets-streams]
+ensure [robberies]
+
+## Permissions ##
+add_ace group.admin command allow # allow all commands
+add_principal identifier.steam:YOUR ID group.admin
+add_principal identifier.steam:YOUR ID qbcore.god
+## Permissions FiveM ID##
+add_ace group.admin command allow # allow all commands
+add_principal identifier.steam:11000016171c115 group.admin 
+add_principal identifier.steam:11000016171c115 qbcore.god 
+add_principal identifier.steam:11000016171c115 qbcore.mod 
+
+
+# Resources
+add_ace resource.qb-core command allow # Allow qb-core to execute commands
+
+# Gods
+add_ace qbcore.god command allow # Allow all commands
+
+add_ace builtin.everyone spooner allow
+
+# Inheritance
+add_principal qbcore.god group.admin # Allow gods access to the main admin group used to get all default permissions
+add_principal qbcore.god qbcore.admin # Allow gods access to admin commands
+add_principal qbcore.admin qbcore.mod # Allow admins access to mod commands

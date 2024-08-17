@@ -1,0 +1,2 @@
+INSERT INTO `items` (`name`, `label`, `weight`, `rare`, `can_remove`) VALUES ('bandageg', 'Bandage Gauze', '2', '0', '1');
+INSERT INTO `items` (`name`, `label`, `weight`, `rare`, `can_remove`) VALUES ('forceps', 'Forceps', '1', '0', '1'), ('gauze', 'Gauze', '1', '0', '1'), ('iodine', 'Iodine', '1', '0', '1'), ('pill', 'Pill', '1', '0', '1'), ('surgical_gloves', 'Surgical gloves', '1', '0', '1'), ('surgical_staple', 'Surgical staple', '1', '0', '1'), ('surgical_tray', 'Surgical tray', '1', '0', '1'), ('syringe', 'Syringe', '1', '0', '1'), ('tape', 'Tape', '1', '0', '1');

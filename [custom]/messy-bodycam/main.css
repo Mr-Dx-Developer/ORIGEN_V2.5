@@ -1,0 +1,15 @@
+html,body {
+	background:transparent;
+}
+
+  #top-right-text {
+	position: absolute;
+	top: 5%;
+	right: 2%;
+	color: white;
+	padding: 10px;
+	font-family: 'Inconsolata', monospace;
+	font-size: 28px;
+	text-shadow: 2px 2px 2px black;
+	text-transform: uppercase;
+}

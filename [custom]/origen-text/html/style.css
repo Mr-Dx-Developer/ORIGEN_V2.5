@@ -1,0 +1,235 @@
+* {
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: mont;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: mont;
+  src: url("../html/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: GemunuLibre-Bold;
+  src: url("../fonts/GemunuLibre-Bold.ttf");
+}
+
+body {
+  margin: 0;
+  display: none;
+  overflow: hidden;
+}
+
+.bg{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+
+.main-box{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55%;
+  width: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-box .key-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4%;
+  width: 4.2%;
+  font-size: 0.8vw;
+  padding: 2px;
+  background:radial-gradient(83% 83% at 50% 50%,rgb(1, 104, 76),rgb(7, 197, 153));
+  color: white;
+  box-shadow: 0px 0px 15px 2px rgb(47,113,100);
+  position: absolute;
+  overflow: initial;
+}
+
+.main-box .key-box .key-box-border{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110%;
+  width: 110%;
+  font-size: 0.9vw;
+  padding: 2px;
+  left: -15%;
+  border: 1px solid rgb(139, 137, 137,.2);
+  color: white;
+  position: absolute;
+  overflow: initial;
+}
+
+.main-box .hr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45%;
+  width: 3.5%;
+  filter: blur(0.6px);
+  font-size: 0.9rem;
+  background:radial-gradient(83% 83% at 50% 50%,rgb(1, 104, 76),rgb(7, 197, 153));
+  position: absolute;
+  top: -13%;
+  left: -19%;
+  border: none;
+  z-index: 5;
+}
+
+.main-box .right-box{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 35%;
+  font-size: 0.9rem;
+  padding: 2px;
+  left: 54%;
+  top: 44%;
+  justify-content: start;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: start;
+  align-content: start;
+  color: white;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.main-box .right-box .item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 12%;
+  height: 1%;
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 2px 0px 2px 0px;
+  color: white;
+  overflow: initial;
+  cursor: pointer;
+}
+
+
+.main-box .item .item-box-border{
+  justify-content: center;
+  align-items: center;
+  height: 6.5%;
+  width: 64%;
+  left: 24.3%;
+  font-size: 0.9vw;
+  padding: 2px;
+  border: 1px solid rgb(139, 137, 137,.1);
+  color: white;
+  position: absolute;
+}
+
+
+
+.main-box .right-box .item:hover .item-right{
+  background-color: rgb(8, 131, 106);
+}
+
+.main-box .right-box .item:hover .control-1 path{
+  fill: #19c29a;
+}
+
+.main-box .right-box .item:hover .alt-border{
+  display: flex;
+}
+
+.main-box .right-box .item:hover .border{
+  background:radial-gradient(83% 83% at 50% 50%,rgb(1, 104, 76),rgb(7, 197, 153));
+}
+.main-box .right-box .item:hover .itemhr{
+  background:radial-gradient(83% 83% at 50% 50%,rgb(1, 104, 76),rgb(7, 197, 153));
+}
+
+
+
+.main-box .item .itemhr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5%;
+  width: 14.5%;
+  top: -19%;
+  left: -1.5%;
+  filter: blur(0.6px);
+  font-size: 0.9rem;
+  background-color: rgb(79, 82, 82,0.3);
+  position: absolute;
+  border: none;
+  z-index: 5;
+}
+
+.main-box .right-box .border{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.4%;
+  width: 8%;
+  left: 8%;
+  position: absolute;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  padding: 2px;
+  overflow: initial;
+  background-color: rgb(79, 82, 82,0.8);
+}
+
+.main-box .right-box .border .control-1{
+  position: absolute;
+  left: 83%;
+  top: -11%;
+  transform: rotate(42deg);
+}
+
+.main-box .right-box .alt-border{
+  justify-content: center;
+  align-items: center;
+  height: 3%;
+  width: 3%;
+  position: absolute;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  padding: 2px;
+  background-color: rgb(20, 195, 154);
+  display: none;
+}
+
+.main-box .right-box .item-right{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  flex-direction: column;
+  height: 4%;
+  width: 60%;
+  left: 26%;
+  padding: 4px 0px 2px 6px;
+  font-size: 0.45vw;
+  background-color: rgb(79, 82, 82,0.8);
+  transition: 0.1s;
+  overflow: initial;
+  color: white;
+}
+
+.active-item{
+  background-color: red;
+}

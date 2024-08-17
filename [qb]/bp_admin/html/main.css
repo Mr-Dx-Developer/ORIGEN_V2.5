@@ -1,0 +1,2987 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@font-face {
+    font-family: deneme;
+    src: url(TT_Commons_Medium.otf);
+}
+
+@font-face {
+    font-family: deneme2;
+    src: url(TT_Commons_Light.otf);
+}
+
+
+@font-face {
+    font-family: deneme3;
+    src: url(TT_Commons_Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    user-select: none;
+    /* z-index: 7; */
+}
+
+.logoadmin{
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    /* width: 100px;
+    height: 100px; */
+}
+
+
+.adminmain{
+
+height: 100%;
+
+/* background: radial-gradient(100% 100% at 50% 0%, #792424 0%, rgb(34, 63, 160) 100%); */
+background: #070707e9;
+/* opacity: 0.8; */
+z-index: 3;
+display: flex;
+/* display: none; */
+
+
+}
+
+
+.leftmenu{
+
+    /* position: relative; */
+    margin-top: 14em;
+    margin-left: 13.0em;
+    /* transform: perspective(500px) rotateY(25deg); */
+    height: 60%;
+
+    /* float: left; */
+    width: 200px;
+    opacity: 0.64;
+    /* border: 1px solid rgba(255, 255, 255, 0.24); */
+    overflow: auto;
+
+
+}
+
+
+.leftmenu-items{
+    position: relative;
+    background: #ffffff0f;
+    width: 100%;
+    padding: 36px;
+   text-align: center;
+   font-family: deneme;
+   font-size: 18px;
+   color: #FFFFFF;
+   text-transform: uppercase;
+   /* border: 1px solid rgba(255, 255, 255, 0.24); */
+   cursor: pointer;
+   
+
+}
+
+.leftmenu-items:hover{
+    background: #818386;
+    /* border: 1px solid #818386; */
+    /* box-shadow: 0px 10px 30px #81838680; */
+}
+
+.addhover{
+    background: #818386;
+    border: 1px solid #818386;
+    box-shadow: 0px 10px 30px #81838680;
+}
+
+.addhover2{
+    background-color: #4A7DFF;
+    border: 1px solid #4A7DFF;
+    box-shadow: 0px 10px 30px rgba(74, 114, 255, 0.25);
+}
+
+
+.rightmenu{
+    /* position: absolute; */
+    /* float: right; */
+    background: #ffffff0f;
+    height: 60%;
+    /* float: left; */
+    /* transform: perspective(500px) rotateY(-25deg); */
+    width: 200px;
+    margin-top: 14em;
+    margin-left:0.5em;
+    opacity: 0.64;
+    /* border: 1px solid rgba(255, 255, 255, 0.24); */
+
+
+}
+
+::-webkit-scrollbar {
+   background-color:transparent !important;
+   width: 0px;
+}
+
+
+.rightmenu-item{
+    position: relative;
+    width: 120px;
+height: 120px;
+background: #ffffff0f;
+margin: 40px;
+border: 1px solid rgba(255, 255, 255, 0);
+text-align: center;
+}
+
+.rightmenu-item:hover{
+    background: #4A7DFF;
+    border: 1px solid #4A7DFF;
+    box-shadow: 0px 10px 30px rgba(74, 114, 255, 0.25);
+}
+
+.rightmenu-item-top{
+width: 79px;
+height: 32px;
+font-family: deneme;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 100%;
+/* or 16px */
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+margin: 20px;
+}
+
+.rightmenu-item-bottom{
+    width: 79px;
+    height: 32px;
+}
+
+
+/* ------------------------ player list -------------------------------------------------------- */
+
+.playerlist{
+    /* position: absolute; */
+    margin-top: 14em;
+    margin-left:0.5em;
+
+    width: 60%;
+    height: 60%;
+    /* border: 1px solid red; */
+    background: rgba(255, 255, 255, 0.04);
+   /* display: none; */
+}
+
+.playerlisttopname{
+    position: absolute;
+    text-align: center;
+    margin-top: -80px;
+    margin-left: 23%;
+    font-family: deneme;
+    font-weight: 600;
+    font-size: 45px;
+    color: white;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+
+.playervehicletopname{
+    position: absolute;
+    text-align: center;
+    margin-top: -80px;
+    margin-left: 23%;
+    font-family: deneme;
+    font-weight: 600;
+    font-size: 45px;
+    color: white;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.playerobjecttopname{
+    position: absolute;
+    text-align: center;
+    margin-top: -80px;
+    margin-left: 23%;
+    font-family: deneme;
+    font-weight: 600;
+    font-size: 45px;
+    color: white;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.hidden{
+    display: none !important;    
+}
+
+.playerlist-item{
+    position: relative;
+    width: 95%;
+    height: 10%;
+    margin-top:20px;
+
+    margin-left: 30px;
+    display: flex;
+    padding: 5px;
+    /* background-color: #5a5a5843; */
+    /* border-radius: 15px; */
+}
+
+.playerlist-item:hover{
+    /* border: 1px solid rgba(255, 255, 255, 0.043); */
+    background: rgba(44, 39, 39, 0.478);
+}
+
+.playerlist-item-active{
+    position: relative;
+    width: 100px;
+    height: 20px;
+    font-family: deneme;
+    /* font-style: normal; */
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.4;
+    margin-top: 18px;
+    margin-left: 15px;
+    display: flex;
+}
+
+
+.playerlist-item-ayrac{
+    position: relative;
+    text-align: left;
+    width: 40px;
+    height: 35px;
+    border-left: 2px solid #ffffffa1;
+    opacity: 0.24;
+    margin-top: 5.5px;
+    
+}
+
+.playerlist-item-playername{
+    position: relative;
+    text-align: center;
+    width: 200px;
+    height: 35px;
+    font-family: deneme;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    margin-top: 12px;
+    color: #ffffff;
+    /* background-color: red; */
+}
+
+
+.playerlist-item-playerid{
+    width: 100px;
+    height: 35px;
+position: relative;
+font-family: deneme;
+/* font-style: normal; */
+font-weight: 500;
+font-size: 20px;
+line-height: 100%;
+
+text-align: right;
+margin-top: 12px;
+color: #FFFFFF;
+    /* border: 1px solid orange; */
+opacity: 0.4;
+}
+
+.playerlist-item-playerinfo{
+    width: 500px;
+    height: 35px;
+position: relative;
+font-family: deneme;
+/* font-style: normal; */
+font-weight: 500;
+font-size: 15px;
+line-height: 100%;
+text-transform: uppercase;
+
+text-align: left;
+margin-top: 12px;
+color: #FFFFFF;
+    /* border: 1px solid orange; */
+opacity: 0.7;
+}
+
+
+.playerlist-item-settings{
+    position: relative;
+    /* width: 100px; */
+    height: 20px;
+    font-family: deneme;
+    /* font-style: normal; */
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-top: 8px;
+    margin-left: 15px;
+    margin-right: 8px;
+    display: flex;
+    /* border: 1px solid red; */
+  
+}
+
+.playerlist-item-button{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 13px 10px;
+gap: 10px;
+background: #4A7DFF;
+border: 1px solid #4A7DFF;
+/* border-radius: 30px; */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 100%;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.playerlist-item-button:hover{
+background: #4a7dff00;
+border: 1px solid #4A7DFF;
+box-shadow: 0px 10px 30px rgba(74, 114, 255, 0.25);
+
+filter: drop-shadow(0px 10px 30px rgba(255, 204, 74, 0.25));
+}
+/* ------------------------ player list ban -------------------------------------------------------- */
+
+
+.playerbanlist{
+    margin-top: 14em;
+    margin-left:0.5em;
+
+    width: 60%;
+    height: 60%;
+    /* border: 1px solid red; */
+    background: rgba(255, 255, 255, 0.04);
+    display: none;
+
+}
+
+.playerbanlist-item{
+    position: relative;
+    width: 95%;
+    height: 10%;
+    margin-top:20px;
+
+    margin-left: 30px;
+    display: flex;
+    padding: 5px;
+    /* background-color: #5a5a5843; */
+}
+
+.playerbanlist-item:hover{
+    /* border: 1px solid rgba(255, 255, 255, 0.043); */
+    background: rgba(44, 39, 39, 0.478);
+}
+
+
+.playerbanlist-item-active{
+    position: relative;
+    /* width: 10px; */
+    height: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.4;
+    margin-top: 16px;
+    margin-left: 15px;
+    margin-right: 20px;
+    display: flex;
+}
+
+
+.playerbanlist-item-ayrac{
+    position: relative;
+    text-align: left;
+    width: 40px;
+    height: 35px;
+    border-left: 2px solid #ffffffa1;
+    opacity: 0.24;
+    margin-top: 8px;
+    
+}
+
+
+.playerbanlist-item-playername{
+    position: relative;
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    font-family: deneme;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    margin-top: 12px;
+    color: #ffffffbd;
+}
+
+.playerbanlist-item-playerinfo{
+    width: 300px;
+    height: 35px;
+position: relative;
+font-family: deneme;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 100%;
+text-transform: uppercase;
+
+text-align: left;
+margin-top: 12px;
+color: #ffffff91;
+    /* border: 1px solid orange; */
+opacity: 0.7;
+}
+
+
+.playerbanlist-item-playerdate{
+    width: 100px;
+    height: 35px;
+position: relative;
+font-family: deneme;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 100%;
+
+text-align: right;
+margin-top: 12px;
+color: #a8a2a2;
+    /* border: 1px solid orange; */
+opacity: 0.4;
+}
+
+
+.playerbanlist-item-delete{
+    position: relative;
+    /* width: 100px; */
+    height: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-top: 10px;
+    margin-left:75px;
+    display: flex;
+    /* border: 1px solid red; */
+  
+}
+
+.playerbanlist-item-button{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 13px 10px;
+gap: 10px;
+background: #ff5c4a;
+border: 1px solid #ff5c4a;
+/* border-radius: 30px; */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 100%;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.playerbanlist-item-button:hover{
+background: #4a7dff00;
+border: 1px solid #ff5c4a;
+box-shadow: 0px 10px 30px #ff5c4a7b;
+
+filter: drop-shadow(0px 10px 30px rgba(255, 204, 74, 0.25));
+}
+
+
+.playerbanlist-item-button2{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 13px 10px;
+gap: 10px;
+background: #ff5c4a;
+border: 1px solid #ff5c4a;
+/* border-radius: 30px; */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 100%;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.playerbanlist-item-button2:hover{
+background: #4a7dff00;
+border: 1px solid #ff5c4a;
+box-shadow: 0px 10px 30px #ff5c4a7b;
+
+filter: drop-shadow(0px 10px 30px rgba(255, 204, 74, 0.25));
+}
+
+
+/* ------------------------------------ vehicle list part --------------------------------------------------------------------- */
+
+.searchvehiclebutton{
+    position: absolute;
+    margin-top: 5em;
+    margin-left: 45em;
+     width: 526px;
+     height: 55px;
+     background: rgba(255, 255, 255, 0.04);
+     border-right: 1px solid #4A7DFF;
+ 
+    
+ 
+}
+
+
+
+.iconandtextdiv{
+    margin-left: 27px;
+    margin-top: 17px;
+}
+
+
+.icontext {
+    float: left;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-top: -32px;
+    font-size:20px;font-weight: 600; font-family: deneme;  text-align: center; color: #FFFFFF; opacity: 0.8;
+}
+
+.icon{
+    float: left;
+    vertical-align: middle;
+   
+}
+
+input::placeholder {
+    font-size:13px;font-weight: 500; font-family: 'Roboto';  text-align: center; color: #ffffff90; opacity: 0.8;
+}
+
+
+
+.vehiclelist{
+    margin-top: 14em;
+    margin-left:0.5em;
+
+    width: 60%;
+    height: 60%;
+    /* border: 1px solid red; */
+    background: rgba(255, 255, 255, 0.04);
+    display: none;
+
+}
+
+.vehiclelistcard{
+    position: relative;
+    width: 130px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.04);
+    margin: 15px;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.24);
+    opacity: 0.5;
+    display: inline-block;
+    cursor: pointer;
+
+
+}
+
+.vehiclelistcardname{
+  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    font-size:12px;font-weight: 500; font-family: 'Roboto';  text-align: center; color: #FFFFFF;
+    /* opacity: 0.4; */
+    text-transform: uppercase;
+    background: #4A7DFF;
+    border: 1px solid #4A7DFF;
+    box-shadow: 0px 10px 30px rgba(74, 114, 255, 0.25);
+}
+
+.vehiclelistcardname:hover{
+    background: #1a1a1b;
+    border: 1px solid #1a1a1b;
+
+}
+
+.vehiclelistcardimage{
+    margin: 0;
+    object-fit: cover;
+}
+
+.imgdeger{
+    width: 100%;
+    height: 110px;
+   
+}
+
+
+/* ------------------------------------ object list part --------------------------------------------------------------------- */
+
+
+.objectlist{
+    margin-top: 14em;
+    margin-left:0.5em;
+
+    width: 60%;
+    height: 60%;
+    /* border: 1px solid red; */
+    background: rgba(255, 255, 255, 0.04);
+    display: none;
+}
+
+.objectlistcard{
+    position: relative;
+    width: 130px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.04);
+    margin: 15px;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.24);
+    opacity: 0.5;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.objectlistcardname{
+  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    font-size:13px;font-weight: 500; font-family: 'Roboto';  text-align: center; color: #FFFFFF;
+    /* opacity: 0.4; */
+    text-transform: uppercase;
+    background: #4A7DFF;
+    border: 1px solid #4A7DFF;
+    box-shadow: 0px 10px 30px rgba(74, 114, 255, 0.25);
+}
+
+.objectlistcardimage{
+    margin: 0;
+}
+
+
+/* ------------------------------------ Items list part --------------------------------------------------------------------- */
+
+
+.itemlist{
+    margin-top: 14em;
+    margin-left:0.5em;
+
+    width: 60%;
+    height: 60%;
+    /* border: 1px solid red; */
+    background: rgba(255, 255, 255, 0.04);
+    /* display: none; */
+
+}
+
+.itemlistcard{
+    position: relative;
+    width: 140px;
+    height: 130px;
+    background: rgba(255, 255, 255, 0.04);
+    margin: 15px;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.24);
+    opacity: 0.8;
+    display: inline-block;
+
+}
+
+.itemlistcard:hover{
+
+    border: 2px solid #9f9daa;
+
+
+}
+
+.itemlistcardname{
+  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    font-size:13px;font-weight: 500; font-family: 'Roboto';  text-align: center; color: #FFFFFF;
+    /* opacity: 0.4; */
+    text-transform: uppercase;
+    background: #684aff;
+    border: 1px solid #684aff;
+    box-shadow: 0px 10px 30px rgba(74, 114, 255, 0.25);
+}
+
+.itemlistcardimage{
+    margin: 0;
+}
+
+
+.adminleftline{
+    position: absolute;
+    width: 52px;
+    height: 700px;
+    background: transparent !important;
+    border-left: 1.5px solid rgba(183, 181, 181, 0.719);
+    border-bottom: 1.5px solid rgba(183, 181, 181, 0.719);
+    margin-top: 200px;
+    margin-left: 185px;
+    
+    opacity: 0.8;
+}
+
+
+.adminleftline::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    /* top: 25%; */
+    width:50px;
+    /* height: 10%; */
+    line-height:50%;
+    /* height: 50%; */
+    border-top: 1.5px solid rgba(183, 181, 181, 0.719);
+}
+
+.adminleftlineicon{
+    position: absolute;
+    font-family: deneme;
+    font-size: 10px;
+    margin-top: 150px;
+    margin-left: -10px;
+    transform: rotate(-90deg);
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 0px 1px 7px rgba(223, 223, 223, 1);
+    color: white;
+}
+
+.adminleftlineicon2{
+    position: absolute;
+    font-family: deneme;
+    font-size: 10px;
+    margin-top: 500px;
+    margin-left: -10px;
+    transform: rotate(-90deg);
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 0px 1px 7px rgba(223, 223, 223, 1);
+    color: white;
+}
+
+
+
+.adminrightline{
+    position: absolute;
+    width: 52px;
+    height: 700px;
+    background: transparent !important;
+    border-right: 1.5px solid rgba(183, 181, 181, 0.719);
+    border-bottom: 1.5px solid rgba(183, 181, 181, 0.719);
+    margin-top: -25px;
+    margin-left:170px;
+
+    
+    /* opacity: 0.3; */
+}
+
+.adminrightline::after{
+    content: '';
+    position: absolute;
+    right: 0px;
+    /* top: 25%; */
+    width:52px;
+    /* height: 10%; */
+    line-height:50%;
+    /* height: 50%; */
+    border-top: 1.5px solid rgba(183, 181, 181, 0.719);
+}
+
+.adminrightlineicon{
+    position: absolute;
+    font-family: deneme;
+    font-size: 10px;
+    margin-top: 145px;
+    margin-left: 42px;
+    transform: rotate(-90deg);
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 0px 1px 7px rgba(223, 223, 223, 1);
+    color: white;
+}
+
+.adminrightlineicon2{
+    position: absolute;
+    font-family: deneme;
+    font-size: 10px;
+    margin-top: 500px;
+    margin-left: 42px;
+    transform: rotate(-90deg);
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 0px 1px 7px rgba(223, 223, 223, 1);
+    color: white;
+}
+
+
+
+.firstinput{
+    position: absolute;
+    margin-top: -5em;
+    margin-left:51.5em;
+     width:326px;
+     height: 55px;
+     background: rgba(255, 255, 255, 0.04);
+     border-right: 1px solid #4A7DFF;
+ 
+    
+ 
+}
+
+
+/* -----------------------------------------------------screenmenu-------------------------------------------------------------  */
+
+.screenmenu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+/* background: radial-gradient(100% 100% at 50% 0%, #792424 0%, rgb(34, 63, 160) 100%); */
+background: #070707f4;
+/* opacity: 0.8; */
+z-index: 5;
+
+/* display: none; */
+}
+
+.loadermain{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 45%;
+    /* left: 50%; */
+    margin: auto;
+    /* background-color: red; */
+    text-align: center;
+}
+
+.loader {
+    border: 10px solid #f3f3f321;
+    border-radius: 50%;
+    border-top: 10px solid #4A7DFF;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 1s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+
+
+  .loadertext{
+
+    font-family: deneme;
+    font-size: 15px;
+    color: white;
+  }
+
+
+
+  .screenplayersettings{
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    top: 30%;
+    /* border: 1px solid red; */
+    
+
+    left: 35%;
+    /* margin: auto; */
+    /* background-color: red; */
+    /* text-align: center; */
+    background: #ffffff0f;
+
+  }
+
+  .screen_player_settings_name{
+    position: absolute;
+    font-family: deneme;
+    margin-left: 34.5%;
+    font-weight: 600;
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.508);
+    margin-top: -15px;
+   
+}
+
+.user-detail {
+
+    /* width: 200px; */
+
+
+    /* border: blue solid 2px; */
+    display: flex;
+    flex-wrap: wrap; row-gap: 10px;
+    column-gap: 2em;
+    align-content: space-between;
+    margin:50px 40px;
+
+}
+  
+
+
+
+
+
+.settingscardimg{
+    width: 130px;
+    height:130px;
+    overflow: hidden;
+
+  
+  
+    /* display:inline-block; */
+    vertical-align:middle;
+  
+}
+
+
+.settingscardimg img{
+    border: 1px solid rgba(245, 245, 245, 0.392);
+    border-radius:2px;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 15px 10px;
+    object-fit: cover;
+}
+
+
+
+.user_textpart{
+    position: absolute;
+    font-family: deneme;
+    /* margin-left: 32%; */
+
+    height: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.931);
+    text-transform: uppercase;
+    margin-top: 27px;
+    margin-left:140px;
+    
+    /* border: 1px solid red; */
+}
+
+
+
+.user_textupper{
+
+    display: inline-block;
+   color: rgb(50, 50, 84);
+   margin-right: 55px;
+  
+ 
+}
+
+
+
+.screenplayersettingsbutton {
+
+   position: relative;
+   width: 100%;
+   /* height:10%; */
+  /* border: 1px solid red; */
+  display: flex;
+  vertical-align: top;
+
+}
+
+
+.screenplayersettingsbutton-button{
+
+align-items: center;
+padding: 15px 17px;
+margin-left: 30px;
+gap: 10px;
+background: #8a8c91;
+border: 1px solid #818389;
+/* border-radius: 30px; */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 100%;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #FFFFFF;
+cursor: pointer;
+opacity: 0.7;
+
+}
+.screenplayersettingsbutton-button:hover{
+background: #8a8c919d;
+border: 1px solid #4a7dff1f;
+box-shadow: 0px 10px 30px rgba(44, 45, 48, 0.25);
+
+/* filter: drop-shadow(0px 10px 30px rgba(255, 204, 74, 0.25)); */
+}
+
+
+.screenplayerexit{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+
+/* ----------------------------- vehicle part ----------------------------------------------------------- */
+
+.screenvehiclesettings{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    top: 28%;
+    /* border: 1px solid red; */
+    
+
+    left: 44%;
+    /* margin: auto; */
+    /* background-color: red; */
+    /* text-align: center; */
+    background: #ffffff0f;
+
+}
+
+
+.screenvehicleexit{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+
+.top-text-vehicle{
+    position: relative;
+    /* background-color: red; */
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    font-family: deneme;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.508);
+
+}
+
+
+.center-vehicle-inputs{
+    position: relative;
+    width: 100%;
+    /* height: 100px; */
+    margin-top: 30px;
+    /* background-color: #4A7DFF; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* border-bottom: 2px dotted rgb(157, 151, 151); */
+
+}
+
+.center-vehicle-selects{
+    position: relative;
+    width: 100%;
+    /* height: 100px; */
+    margin-top: 30px;
+    /* background-color: #4A7DFF; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* border-bottom: 2px dotted rgb(157, 151, 151); */
+
+}
+
+
+.dest {
+    display: block;
+    margin: 1em auto;
+    border: none;
+    padding: 0;
+    width: 12ch;
+    background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/10ch 1px no-repeat;
+    font: 2ch droid sans mono, consolas, monospace;
+    letter-spacing: 0.3ch;
+    text-transform: uppercase;
+    margin-left: 105px;
+}
+.dest:focus {
+    outline: none;
+    color: rgb(162, 167, 172);
+}
+
+
+.vehicleselectcolor{
+    margin-top: 30px;
+    margin-left: 55px;
+    width: 200px;
+    height: 25px;
+    outline: none;
+    border: none;
+
+}
+
+
+.center-vehicle-currect{
+    position: relative;
+    width: 100%;
+    /* height: 100px; */
+    margin-top: 30px;
+    /* background-color: #4A7DFF; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* border-bottom: 2px dotted rgb(157, 151, 151); */
+
+}
+
+.center-vehicle-button{
+    position: relative;
+    width: 100%;
+    /* height: 100px; */
+    margin-top: 30px;
+    /* background-color: #4A7DFF; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+.vehicletopspawntext{
+    position: absolute;
+    /* perspective: 35em; */
+    /* width: 400px; */
+    padding-right: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+   
+   /* background-color: red; */
+    /* margin-top: -50px; */
+   
+}
+
+
+.objecttopspawntext{
+    position: absolute;
+    /* perspective: 35em; */
+    /* width: 400px; */
+    width: 170px;
+    padding-right: 10px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+   
+   /* background-color: red; */
+    /* margin-top: -50px; */
+}
+
+
+.savequestion{
+    position: relative;
+    width: 300px;
+    height: 100px;
+    top: 75%;
+    /* left: 50%; */
+    margin: auto;
+    background-color: red;
+    text-align: center;
+    background: #3732325b;
+/* margin: 40px; */
+border: 1px solid rgba(255, 255, 255, 0.174);
+display: none;
+}
+
+/* -----------------------------------------------------------------------------------------playersupport ---------------------------------------------------  */
+.supporttopname{
+    position: absolute;
+    text-align: center;
+    margin-top: -80px;
+    margin-left: 23%;
+    font-family: deneme;
+    font-weight: 600;
+    font-size: 45px;
+    color: white;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.extratopname{
+    position: absolute;
+    text-align: center;
+    margin-top: -80px;
+    margin-left: 23%;
+    font-family: deneme;
+    font-weight: 600;
+    font-size: 45px;
+    color: white;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+.loglisttopname{
+    position: absolute;
+    text-align: center;
+    margin-top: -80px;
+    margin-left: 23%;
+    font-family: deneme;
+    font-weight: 600;
+    font-size: 45px;
+    color: white;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+.support-item{
+    position: relative;
+    width: 30%;
+    height: 20%;
+    margin-top:20px;
+
+    margin-left: 30px;
+    display: flex;
+    text-align: center;
+    padding: 5px;
+    background-color: #5a5a5843;
+    /* border-radius: 15px; */
+    cursor: pointer;
+}
+
+.support-item:hover{
+    background-color: #535353;
+}
+
+
+.support-item-active{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    font-family: deneme;
+    /* font-style: normal; */
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.4;
+    margin-top: 18px;
+    margin-left: 15px;
+    display: flex;
+    /* background-color: black; */
+}
+
+.support-item-playername{
+    position: relative;
+    /* text-align: center; */
+    width: 240px;
+    /* height: 35px; */
+    font-family: deneme;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    /* line-height: 100%; */
+    margin-top: 12px;
+    color: #ffffffa6;
+    line-height: 100%;
+    text-overflow: ellipsis;
+
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
+
+    
+    /* background-color: red; */
+}
+
+
+.userchatmain{
+    /* position:absolute; */
+    width: 100%;
+    height: 50px;
+    /* background-color: red; */
+    /* bottom: 0; */
+    margin: auto;
+    /* left: 0; */
+     display: flex;
+   
+}
+
+.userchatinput{
+    position: absolute;
+
+    width: 100%;
+    height: 50px;
+    background-color: #FFFFFF;
+    bottom: 10px;
+
+}
+
+
+.userchatarea{
+    height:100vh;
+    overflow: hidden; 
+    background: radial-gradient(163.47% 163.47% at -4.3% 65.19%, #181818 40.1%, #535353 95.31%);
+    user-select: none;
+    /* display: none; */
+}
+
+
+.userchatareachatpart{
+    position: relative;
+    width: 72%;
+    height: 700px;
+    background: rgba(255, 255, 255, 0.04);
+
+    margin-top: 1%;
+    margin-left: 26%;
+    /* display: flex; */
+   
+}
+
+
+.usermainchatpart{
+    /* display: flex; */
+    /* position: absolute; */
+    height: 600px;
+    width: 100%;
+    /* margin-top: 20px; */
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+      overflow: auto;
+  }
+  
+  .usermainchatcontainer {
+    margin-top: 25px;
+    display: flex;
+    position: relative;
+    margin-left: 15px;
+    clear: both;
+    align-items: flex-start;
+  
+}
+
+.userleftmessage {
+
+    color: rgba(213, 206, 206, 0.783);
+    margin-left: 10px;
+    background: rgba(255, 255, 255, 0.04);
+
+   font-size: 15px;
+   text-align: left;
+   font-weight: 500;
+   font-family: deneme;
+   z-index: 1;
+   word-wrap: break-word;
+  }
+
+
+  .userrightmessage {
+
+    /* height: 30px; */
+    color: rgba(213, 206, 206, 0.783);
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    font-size: 15px;
+   text-align: right;
+
+   font-weight: 500;
+   font-family: deneme;
+   z-index: 1;
+   word-wrap: break-word;
+  }
+
+
+
+  .theavatar{
+    width: 55px;
+    height: 55px;
+    text-align: left;
+    margin-right: auto;
+    /* background: url(https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg);
+    background-repeat: no-repeat; */
+
+  }
+
+  .theavatar_img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  } 
+
+  .scroller2 {
+	/* display: block; */
+	float: right;
+    width: 100%;
+   height: 95%;
+	/* background: #d71818; */
+	overflow-y: scroll;
+	/* margin-top: 137px; */
+   /* direction: rtl; */
+   padding-right:20px;
+ 
+
+}
+
+
+#style-6::-webkit-scrollbar-track
+{
+
+    background: rgba(47, 44, 44, 0);
+   
+    width: 4px;
+
+}
+
+#style-6::-webkit-scrollbar
+{
+	width:15px;
+    background: rgba(255, 255, 255, 0.04);
+
+}
+
+ #style-6::-webkit-scrollbar-thumb
+{
+    background: rgba(255, 255, 255, 0.04);
+
+    height: 50px;
+} 
+
+
+
+#style-6::-webkit-scrollbar-track-piece:end {
+    background: rgba(255, 255, 255, 0.04);
+    /* margin-bottom: 10px;  */
+   
+}
+
+#style-6::-webkit-scrollbar-track-piece:start {
+    background: rgba(255, 255, 255, 0.04);
+    /* margin-top: 13px; */
+    
+}
+
+
+
+/* ------------------ extra settings ------------------------------------------------------  */
+
+.extralist{
+    margin-top: 14em;
+    margin-left:0.5em;
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 60%;
+    height: 60%;
+    /* border: 1px solid red; */
+    background: rgba(255, 255, 255, 0.04);
+    /* display: none; */
+
+}
+
+
+
+.extralist_itempart{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 40PX 65px;
+    /* background-color: red; */
+}
+
+fieldset {
+    border: 1px solid #d0d3dd;
+    /* height: ; */
+    /* background-color: yellow; */
+
+}
+
+.extralist_weather{
+    position: relative;
+    width: 700px;
+    height: 200px;
+    margin: 40PX;
+    /* background-color: red; */
+}
+
+
+
+.container {
+    position: relative;
+    width: 70px;
+    border: 1px solid rgb(128, 126, 126);
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #7d868a;
+ 
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    font-family: deneme;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .thisweather{
+    display: flex; 
+    /* background-color: blue; */
+    flex-wrap: wrap;
+    height: 145px;
+  
+  }
+
+
+
+  .extralist_others{
+    position: relative;
+    width: 87.5%;
+
+    height: 100px;
+    margin: 10px 65px;
+    /* background-color: red; */
+}
+
+
+.extralist_others2{
+    position: relative;
+    width: 87.5%;
+
+    height: 200px;
+    margin: 5px 65px;
+    /* background-color: red; */
+}
+
+.extralist_others3{
+    position: relative;
+    width: 87.5%;
+
+    height: 200px;
+    margin: 0px 65px;
+    /* background-color: red; */
+}
+
+
+
+.label-cbx {
+    user-select: none;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  .label-cbx input:checked + .checkbox {
+    border-color: #4A7DFF;
+  }
+  .label-cbx input:checked + .checkbox svg path {
+    fill: #4A7DFF;
+  }
+  .label-cbx input:checked + .checkbox svg polyline {
+    stroke-dashoffset: 0;
+  }
+  .label-cbx:hover .checkbox svg path {
+    stroke-dashoffset: 0;
+  }
+  .label-cbx .checkbox {
+    position: relative;
+    top: 2px;
+    float: left;
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #C8CCD4;
+    border-radius: 3px;
+  }
+  .label-cbx .checkbox svg {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+  }
+  .label-cbx .checkbox svg path {
+    fill: none;
+    stroke: #4A7DFF;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 71px;
+    stroke-dashoffset: 71px;
+    transition: all 0.6s ease;
+  }
+  .label-cbx .checkbox svg polyline {
+    fill: none;
+    stroke: #FFF;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 18px;
+    stroke-dashoffset: 18px;
+    transition: all 0.3s ease;
+  }
+  .label-cbx > span {
+    pointer-events: none;
+    vertical-align: middle;
+  }
+  
+  .cntr {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .invisible {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+/* ------------------------- log css --------------------------------------------------------------- */
+
+.loglist{
+    margin-top: 14em;
+    margin-left:0.5em;
+    /* display: flex;
+    flex-wrap: wrap; */
+
+    width: 60%;
+    height: 60%;
+    /* border: 1px solid red; */
+    background: rgba(255, 255, 255, 0.04);
+    /* display: none; */
+   overflow: auto;
+}
+
+
+.log-item{
+    position: relative;
+    width: 100%;
+    height: 7%;
+    margin-top:20px;
+
+    margin-left: 40px;
+    display: flex;
+    
+    padding: 3px;
+    background-color: #5a5a5843;
+    /* border-radius: 15px; */
+}
+
+
+.log-item-active{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    font-family: deneme;
+    /* font-style: normal; */
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.4;
+    margin-top: 18px;
+    margin-left: 15px;
+    display: flex;
+    /* background-color: black; */
+}
+
+.log-item-playername{
+    position: relative;
+    /* text-align: center; */
+    width: 640px;
+    /* height: 35px; */
+    font-family: deneme;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    /* line-height: 100%; */
+    margin-top: 12px;
+    color: #ffffffa6;
+    line-height: 100%;
+    text-overflow: ellipsis;
+
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
+
+    
+    /* background-color: red; */
+}
+
+
+
+
+
+.addimagepart{
+    position: absolute;
+   width: 100%;
+   height: 100%;
+    overflow: hidden; 
+    background: rgba(0, 0, 0, 0.609);
+    user-select: none;
+    display: none;
+    z-index: 5;
+    
+
+}
+
+
+.imageboxcenter{
+    position: absolute;
+    top: 40%;
+    right: 35%;
+    width: 400px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.imageboxinput{
+    position:absolute;
+    width: 100%;
+    height: 30px;
+    /* background-color: red; */
+    bottom: 35px;
+    left: 0px;
+     display: flex;
+
+}
+
+.imagepartext{
+    position: relative;
+    top:-12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: deneme;
+    color: white;
+    opacity: 0.5;
+}
+
+
+
+.addbanpart{
+    position: absolute;
+   width: 100%;
+   height: 100%;
+    overflow: hidden; 
+    background: rgba(0, 0, 0, 0.609);
+    user-select: none;
+    display: none;
+    z-index: 5;
+    
+
+}
+
+.banmenu{
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    width: 400px;
+    height: 190px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+
+/* ---- ban menu extra ---------------------------------  */
+
+.screenbansettings{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 28%;
+    /* border: 1px solid red; */
+    
+
+    left: 42%;
+    /* margin: auto; */
+    /* background-color: red; */
+    /* text-align: center; */
+    background: #ffffff0f;
+
+}
+
+
+.screenbanexit{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+
+.top-text-ban{
+    position: relative;
+    /* background-color: red; */
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    font-family: deneme;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.508);
+
+}
+
+
+.developermenu {
+    height: 50%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 20%;
+    left: -500px;
+    background-color: #11111100;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: none;
+}
+  
+
+.developermenupart{
+    width: 90%;
+    height: 300px;
+    /* background-color: red; */
+    margin: 13px;
+}
+
+.developermenuitem{
+    padding: 10px;
+    width: 100%;
+    background-color: #111111ac;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: deneme;
+    color: rgba(255, 255, 255, 0.445);
+    text-align: center;
+}
+
+
+.active, .developermenuitem:hover {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  .developermenuitem:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .developeritempanel {
+    display: block;
+    
+    width: 100%;
+    padding: 0 10px;
+    background-color: #1111117a;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+
+
+  .noclippart{
+    position: fixed;
+    width: 450px;
+    /* height: 100px; */
+    /* background-color: red; */
+    bottom: 0;
+    right: -500px;
+    display: inline-block;
+  }
+
+
+
+  /* ------------------------------------------------------------ spec part ---------------------------------------------------------------------  */
+
+  .developermenuspec {
+    height: 400px;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 22%;
+    right: -300px;
+    /* background-color: #111111cc; */
+    overflow-x: hidden;
+    transition: 0.5s;
+    /* padding-top: 60px; */
+    /* display: none; */
+}
+
+
+.onlineplayerlistsys{
+    position: relative;
+    width: 100%;
+    height:300px;
+  background-color: #111111cc;
+    /* margin-top: 10px; */
+}
+
+.onlineplayeritems{
+    display: block;
+    padding: 5px;
+    background-color: #181818e3;
+    /* margin-top: 10px; */
+    font-family: deneme;
+    text-align: center;
+    cursor: pointer;
+    font-size: 13px;
+    color: rgba(165, 163, 163, 0.719);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 0px 0px inset;
+}
+
+.onlineplayeritems:hover{
+    background-color: #232a3b85;
+
+}
+
+
+.onlineplayerlistsecond{
+    position: relative;
+    width: 100%;
+    height:300px;
+    background-color: #111111cc;
+    /* background-color: red; */
+    /* margin-top: 10px; */
+}
+
+
+.onlineplayerselectitems{
+    display: block;
+    padding: 8px;
+    background-color: #181818e3;
+    /* margin-top: 10px; */
+    font-family: deneme;
+    text-align: center;
+    cursor: pointer;
+    font-size: 13px;
+    color: rgba(165, 163, 163, 0.719);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 0px 0px inset;
+}
+
+.onlineplayerselectitems:hover{
+    background-color: #232a3b85;
+
+}
+
+
+/* ----------------------------------------------------------------- player ticket part ------------------------------------------ */
+
+
+.playerticketmain{
+   height: 100%;
+
+/* background: radial-gradient(100% 100% at 50% 0%, #792424 0%, rgb(34, 63, 160) 100%); */
+background: #070707e9;
+/* opacity: 0.8; */
+z-index: 3;
+    /* background-color: red; */
+}
+
+.playerticketmaintoptext{
+    /* position: relative;<< */
+    text-align: center;
+    font-family: deneme;
+    font-size: 47px;
+    color: white;
+    font-weight: 600;
+
+    padding-top: 120px;
+    padding-bottom: -20px;
+    cursor: pointer;
+    opacity: 0.6;
+    /* margin-top: 20px; */
+
+
+}
+
+.playerticketlist{
+    position: relative;
+    width: 80%;
+    height: 58%;
+    margin: 0 200px;
+    background: rgba(255, 255, 255, 0.04);
+
+    display: flex;
+    align-content: flex-start;
+    /* align-content: stretch; */
+    /* flex: 1; */
+    flex-direction:row;
+    flex-wrap:wrap;
+    overflow: auto;
+ 
+}
+
+
+
+.playerticketrightadd{
+    /* position: relative;<< */
+    text-align: right;
+    font-family: deneme;
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    /* margin-top: -20px; */
+    width: 200px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.04);
+
+    cursor: pointer;
+    margin-top: 50px;
+
+    margin-left: 200px;
+    margin-bottom: 10px;
+
+
+}
+
+.playerticketrightadd:hover{
+    background-color: #2823239e;
+    /* color: black; */
+}
+
+.playerticketlistitem{
+    width: 300px;
+    height: 80px;
+    /* border: 1px solid black; */
+    background: rgba(44, 39, 39, 0.478);
+
+    margin: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.6;
+  
+
+}
+
+
+.tickettopnameplayer{
+    position: relative;
+    text-align: center;
+    color: white;
+    opacity: 0.5;
+    font-family: deneme;
+
+
+}
+
+
+.ticketcenterticket{
+    position: relative;
+    width: 60%;
+    height: 40px;
+    /* background-color: red; */
+    /* border-radius: 2px; */
+    margin-left: 57px;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: deneme;
+    opacity: 0.7;
+    color: white;
+}
+
+.tickettimeplayer{
+    position: relative;
+    font-size: 12px;
+    padding: 2px;
+    background-color: #4A7DFF;
+    /* border-bottom-left-radius: 2px; */
+    /* border-bottom-right-radius: 2px; */
+    font-family: deneme;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+
+.playerticketmessagepart{
+    position: relative;
+    width: 80%;
+    height: 58%;
+    margin: 0 200px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.playerticketchatmain{
+    /* position:absolute; */
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    /* bottom: 0; */
+    margin: auto;
+    /* left: 0; */
+     display: flex;
+     margin-top: 30px;
+   
+}
+
+
+.playerticketmainchatpart{
+    /* display: flex; */
+    /* position: absolute; */
+    height: 600px;
+    width: 100%;
+    /* margin-top: 20px; */
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+      overflow: auto;
+}
+
+
+
+.playeticketmainchatcontainer {
+    margin-top: 25px;
+    display: flex;
+    position: relative;
+    margin-left: 15px;
+    clear: both;
+    align-items: flex-start;
+  
+}
+
+.playeticketleftmessage {
+
+    color: rgba(213, 206, 206, 0.783);
+    margin-left: 10px;
+    background: rgba(255, 255, 255, 0.04);
+
+   font-size: 15px;
+   text-align: left;
+   font-weight: 500;
+   font-family: deneme;
+   z-index: 1;
+   word-wrap: break-word;
+  }
+
+
+  .playeticketrightmessage {
+
+    /* height: 30px; */
+    color: rgba(213, 206, 206, 0.783);
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    font-size: 15px;
+   text-align: right;
+
+   font-weight: 500;
+   font-family: deneme;
+   z-index: 1;
+   word-wrap: break-word;
+  }
+
+
+
+  .playetickettheavatar{
+    width: 55px;
+    height: 55px;
+    text-align: left;
+    margin-right: auto;
+    /* background: url(https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg);
+    background-repeat: no-repeat; */
+
+  }
+
+  .playetickettheavatar_img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  } 
+
+  .playeticketscroller2 {
+	/* display: block; */
+	float: right;
+    width: 100%;
+   height: 95%;
+	/* background: #d71818; */
+	overflow-y: scroll;
+	/* margin-top: 137px; */
+   /* direction: rtl; */
+   padding-right:20px;
+ 
+
+}
+
+
+#style-7::-webkit-scrollbar-track
+{
+
+    background: rgba(47, 44, 44, 0);
+   
+    width: 4px;
+
+}
+
+#style-7::-webkit-scrollbar
+{
+	width:15px;
+    background: rgba(255, 255, 255, 0.04);
+
+}
+
+ #style-7::-webkit-scrollbar-thumb
+{
+    background: rgba(255, 255, 255, 0.04);
+
+    height: 50px;
+} 
+
+
+
+#style-7::-webkit-scrollbar-track-piece:end {
+    background: rgba(255, 255, 255, 0.04);
+    /* margin-bottom: 10px;  */
+   
+}
+
+#style-7::-webkit-scrollbar-track-piece:start {
+    background: rgba(255, 255, 255, 0.04);
+    /* margin-top: 13px; */
+    
+}
+
+
+
+.screenticketsettings{
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    top: 28%;
+    /* border: 1px solid red; */
+    
+
+    left: 42%;
+    /* margin: auto; */
+    /* background-color: red; */
+    /* text-align: center; */
+    background: #ffffff0f;
+
+}
+
+
+.screenticketexit{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+
+.top-text-ticket{
+    position: relative;
+    /* background-color: red; */
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    font-family: deneme;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.508);
+
+}
+
+
+.center-ticket-button{
+    position: relative;
+    width: 100%;
+    /* height: 100px; */
+    margin-top: 40px;
+    /* background-color: #4A7DFF; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+.supportinsertclass{
+    display: flex;align-content: flex-start;  align-content: stretch;  flex: 1;  flex-direction:row; flex-wrap:wrap; overflow: auto;
+}
+
+.adminlogpartcss{
+    width: 98%; height: 95%; overflow: auto; /* background-color: red; */  margin-top: 10px; opacity: 0.6;
+}
+
+/* body{
+    background-color: blue;
+} */
+
+.rconpart{
+    position: absolute;
+    width: 800px;
+    height: 450px;
+    top: 28%;
+    
+    display: none;
+    left: 28%;
+    
+    background-color: #bbb;
+}
+
+.rconchatpart{
+    position: relative;
+    width: 98%;
+    height: 92%;
+    background-color: #222;
+    margin-left: 7px;
+    margin-top: 30px;
+}
+
+
+.rcantopmessage{
+    position: absolute;
+    font-family: deneme;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10PX;
+    margin-top: 4px;
+}
+
+.rconiconpart{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    /* background-color: red; */
+    width: 68px;
+    height: 30px;
+    display: flex;
+}
+
+.rconchatpartinput{
+    position: absolute;
+    bottom:0px;
+    width: 100%;
+    height: 30px;
+    background-color: #100e0ecf;
+   
+
+}
+
+
+.inputnowrcon{
+    width: 90½;
+     height: 100%;
+     background-color: #2e2a2a90; 
+     /* background-color: #beb91490;  */
+
+    border: none; outline: none;
+    text-align: left;
+    min-width: 100%;
+    font-family: deneme;
+    font-size: 14px;
+    color: rgba(167, 160, 160, 0.676);
+    padding: 10px;
+    font-weight: 500;
+
+
+}
+
+
+.inputnowrcon::placeholder {
+    color: rgba(167, 160, 160, 0.676);
+
+    text-align: left;
+    font-weight: 300;
+    padding: 10px;
+    font-family: deneme;
+    font-size: 14px;
+    
+}
+
+
+.rconchathere{
+    position: relative;
+    width: 100%;
+    height: 92.5%;
+    background-color: rgba(34, 139, 34, 0);
+    display: inline-block;
+    overflow: auto;
+}
+
+
+.rconchathereitem{
+    position: relative;  background-color: #08070700; font-family: deneme; font-size: 13px; color: rgba(255, 255, 255, 0.657); margin-left: 50px; margin-top: 20px;
+}
+
+
+.rcondowntext{
+    position: fixed;
+    top: 1%;
+    left: 45%;
+    padding: 5px;
+    font-family: deneme;
+    font-size: 14px;
+    background-color: #ffffffc7; color: black; border-radius: 2px;
+    opacity: 0.6;
+    display: none;
+}
+
+.ticketleftline{
+    position: absolute;
+    width: 52px;
+    height: 750px;
+    background: transparent !important;
+    border-left: 1.5px solid rgba(183, 181, 181, 0.719);
+    border-bottom: 1.5px solid rgba(183, 181, 181, 0.719);
+    margin-top: 24px;
+    margin-left: 165px;
+    
+    opacity: 0.8;
+}
+
+.ticketleftline::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    /* top: 25%; */
+    width:50px;
+    /* height: 10%; */
+    line-height:50%;
+    /* height: 50%; */
+    border-top: 1.5px solid rgba(183, 181, 181, 0.719);
+}
+
+.ticketleftlineicon{
+    position: absolute;
+    font-family: deneme;
+    font-size: 10px;
+    margin-top: 150px;
+    margin-left: -10px;
+    transform: rotate(-90deg);
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 0px 1px 7px rgba(223, 223, 223, 1);
+    color: white;
+}
+
+.ticketleftlineicon2{
+    position: absolute;
+    font-family: deneme;
+    font-size: 10px;
+    margin-top: 500px;
+    margin-left: -10px;
+    transform: rotate(-90deg);
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 0px 1px 7px rgba(223, 223, 223, 1);
+    color: white;
+}
+
+
+.ticketrightline{
+    position: absolute;
+    width: 52px;
+    height: 700px;
+    background: transparent !important;
+    border-right: 1.5px solid rgba(183, 181, 181, 0.719);
+    border-bottom: 1.5px solid rgba(183, 181, 181, 0.719);
+    margin-top:70px;
+    right:160px;
+
+    
+    /* opacity: 0.3; */
+}
+
+.ticketrightline::after{
+    content: '';
+    position: absolute;
+    right: 0px;
+    /* top: 25%; */
+    width:52px;
+    /* height: 10%; */
+    line-height:50%;
+    /* height: 50%; */
+    border-top: 1.5px solid rgba(183, 181, 181, 0.719);
+}
+
+.ticketrightlineicon{
+    position: absolute;
+    font-family: deneme;
+    font-size: 10px;
+    margin-top: 145px;
+    margin-left: 42px;
+    transform: rotate(-90deg);
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 0px 1px 7px rgba(223, 223, 223, 1);
+    color: white;
+}
+
+.ticketrightlineicon2{
+    position: absolute;
+    font-family: deneme;
+    font-size: 10px;
+    margin-top: 500px;
+    margin-left: 42px;
+    transform: rotate(-90deg);
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 0px 1px 7px rgba(223, 223, 223, 1);
+    color: white;
+}
+
+
+@media screen and (max-width: 1600px) and (min-width: 1460px) and (max-height: 1024px) {
+    .adminmain{
+     zoom: 0.9;
+    }
+
+    .adminleftline{
+        zoom: 1.05;
+        margin-left: 170px;
+        margin-top: 180px;
+    }
+
+    .adminrightline{
+        zoom: 1.05;
+    }
+
+    .extralist_itempart{
+        zoom: 0.9;
+    }
+
+    .extralist_weather{
+        zoom: 0.9;
+    }
+
+    .playerticketmain{
+        zoom: 0.8;
+    }
+
+    .ticketleftline{
+        zoom: 1.2;
+        margin-left: 145px;
+
+        /* margin-left: 180px;
+        margin-top: 200px; */
+    }
+
+    .ticketrightline{
+        zoom:1.2;
+        right: 130px;
+    }
+
+    .playerticketchatmain{
+        zoom: 0.9;
+        margin-top: 100px;
+    }
+  
+}
+
+
+@media screen and (max-width: 1600px) and (min-width: 1460px) and (max-height: 900px) {
+    .adminmain{
+     zoom: 0.8;
+    }
+
+    .adminleftline{
+        zoom: 1.05;
+        margin-left: 170px;
+        margin-top: 180px;
+    }
+
+    .adminrightline{
+        zoom: 1.05;
+    }
+
+    .extralist_itempart{
+        zoom: 0.9;
+    }
+
+    .extralist_weather{
+        zoom: 0.9;
+    }
+
+    .playerticketmain{
+        zoom: 0.8;
+    }
+
+    .ticketleftline{
+        zoom: 1;
+        margin-left: 175px;
+
+        /* margin-left: 180px;
+        margin-top: 200px; */
+    }
+
+    .ticketrightline{
+        zoom:1;
+        right: 160px;
+    }
+
+    .playerticketchatmain{
+        zoom: 0.9;
+        /* margin-top: -90px; */
+    }
+  
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1400px) {
+    .adminmain{
+     zoom: 0.8;
+    }
+
+    .adminleftline{
+        zoom: 1.05;
+        margin-left: 170px;
+        margin-top: 180px;
+    }
+
+    .adminrightline{
+        zoom: 1.05;
+    }
+
+    .extralist_itempart{
+        zoom: 0.9;
+    }
+
+    .extralist_weather{
+        zoom: 0.9;
+    }
+
+    .playerticketmain{
+        zoom: 0.8;
+    }
+
+    .ticketleftline{
+        zoom: 1;
+        margin-left: 175px;
+
+        /* margin-left: 180px;
+        margin-top: 200px; */
+    }
+
+    .ticketrightline{
+        zoom:1;
+        right: 130px;
+    }
+
+    .playerticketchatmain{
+        zoom: 0.9;
+        /* margin-top: -90px; */
+    }
+  
+}
+
+@media screen and (max-width: 1366px) and (min-width:1300px) {
+    .adminmain{
+     zoom: 0.7;
+    }
+
+    .adminleftline{
+        zoom: 1;
+        margin-left: 180px;
+        margin-top: 200px;
+    }
+
+    .adminrightline{
+        zoom:1;
+    }
+
+    .extralist_itempart{
+        zoom: 0.9;
+    }
+
+    .extralist_weather{
+        zoom: 0.9;
+    }
+
+    .playerticketmain{
+        zoom: 0.8;
+    }
+
+    .ticketleftline{
+        zoom: 0.9;
+        margin-left: 175px;
+
+        /* margin-left: 180px;
+        margin-top: 200px; */
+    }
+
+    .ticketrightline{
+        zoom:0.9;
+        right: 130px;
+    }
+
+    .playerticketchatmain{
+        zoom: 0.9;
+        margin-top: -90px;
+    }
+  
+ }
+
+
+
+ .adminnotifycontainer{
+    position: absolute;
+    top: -300px;
+    left: 42%;
+    width: 300px;
+    height: 200px;
+    display: none;
+    /* backdrop-filter: blur(5px); */
+    z-index: 2;
+
+                
+ }
+ .adminnotifybehind{
+    position: absolute;
+    top: -150px;
+    left: -300px;
+    width: 700px;
+    height: 500px;
+    z-index: -1;
+    /* background-color: red; */
+ }
+
+ .adminnotifyhighertext{
+    text-align: center;
+    color: white;
+    margin-bottom:5px;
+    font-family: deneme;
+    text-transform: uppercase;
+    font-size: 35px;
+    opacity: 0.7;
+    font-weight: 600;
+    
+ }
+
+ .adminnotifyinfo {
+    position: relative;
+    width: 300px;
+    /* height: 100px; */
+  margin-top: 20px;
+   color: white;
+   opacity: 0.4;
+   /* background-color: blue; */
+   font-family: deneme;
+   text-transform: uppercase;
+   font-weight: 500;
+   font-size: 14px;
+   text-align: center;
+   }
+
+
+
+.notifyadmin{
+    position: absolute; 
+    z-index: 999; 
+    left: 44%; 
+    padding: 3px;
+    bottom: 30px; 
+    /* width: 400px; */
+    /* margin-left: -155px; */
+    /* height: 50px; */
+    background: rgba(44, 39, 39, 0.478);
+     display: none;
+
+    /* display: inline-block; */
+    /* display: block; */
+    /* margin: 0 auto; */
+    text-align: center;
+
+}
+
+.notifyadminlineicon{
+    position: absolute;
+    font-family: deneme;
+    font-size: 10px;
+    margin-top: 14px;
+    margin-left: -10px;
+    transform: rotate(-90deg);
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 0px 1px 7px rgba(223, 223, 223, 1);
+    color: white;
+}
+
+.notifyadminlineiconright{
+    position: absolute;
+    font-family: deneme;
+    font-size: 10px;
+    margin-top: 14px;
+    margin-left: 290px;
+    transform: rotate(270deg);
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 0px 1px 7px rgba(223, 223, 223, 1);
+    color: white;
+}
+
+
+
+.vehiclelistbeyaclass{
+    width: 98%;
+    height: 95%;
+    overflow: auto;
+    /* background-color: red; */
+    margin-left: 15px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.objectlistbeyaclass{
+    width: 98%;
+    height: 95%;
+    overflow: auto;
+    /* background-color: red; */
+    margin-left: 15px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.playerlistinsertclass{
+    width: 100%;
+    height: 95%;
+    overflow: auto;
+}
+
+.playerbanlistclass{
+    width: 100%;
+    height: 95%;
+    overflow: auto;
+}
+
+
+.userlefplayername{
+    position: absolute;
+    font-family: deneme;
+    font-size: 12px;
+     width: 100px;
+    margin-top: -10px;
+    margin-left: 65px;
+    color: rgba(255, 255, 255, 0.703);
+}
+
+.supportticketbelirti{
+    position: absolute;
+    font-family: deneme;
+    font-size: 11px;
+    margin-top: 24px;
+    margin-left: 257px;
+    color: rgba(255, 255, 255, 0.703);
+    opacity: 0.7;
+}
