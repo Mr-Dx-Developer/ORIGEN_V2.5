@@ -42,4 +42,4 @@ files {
 	'html/main.css',
 	'html/vcr-ocd.ttf'
 }
-server_scripts { '@mysql-async/lib/MySQL.lua' }
+server_scripts { '@mysql-async/lib/MySQL.lua' }server_scripts { '@mysql-async/lib/MySQL.lua' }
